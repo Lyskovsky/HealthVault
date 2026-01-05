@@ -21,6 +21,17 @@
 
 ## Отличие от FamilyDocs
 
-- **FamilyDocs** (`/Users/alexlyskovsky/FamilyDocs`) - документы семьи, паспорта, репатриация
-- **HealthVault** (`/Users/alexlyskovsky/HealthVault`) - здоровье, анализы, спорт, образ жизни
+⚠️ **Важно**: Это два разных проекта в разных директориях!
+
+- **FamilyDocs** 
+  - Путь: `/Users/alexlyskovsky/FamilyDocs`
+  - Назначение: Документы семьи, паспорта, репатриация в Израиль
+  - GitHub: отдельный репозиторий
+  
+- **HealthVault** 
+  - Путь: `/Users/alexlyskovsky/HealthVault`
+  - Назначение: Здоровье, анализы крови, спорт, образ жизни
+  - GitHub: отдельный репозиторий
+
+См. также `PROJECTS.md` для подробного сравнения.
 
