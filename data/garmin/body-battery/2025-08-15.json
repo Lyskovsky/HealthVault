@@ -1,0 +1,88 @@
+[
+  {
+    "date": "2025-08-15",
+    "charged": 67,
+    "drained": 75,
+    "startTimestampGMT": "2025-08-14T21:00:00.0",
+    "endTimestampGMT": "2025-08-15T21:00:00.0",
+    "startTimestampLocal": "2025-08-15T00:00:00.0",
+    "endTimestampLocal": "2025-08-16T00:00:00.0",
+    "bodyBatteryValuesArray": [
+      [
+        1755216000001,
+        null
+      ],
+      [
+        1755216000002,
+        null
+      ],
+      [
+        1755216000003,
+        null
+      ],
+      [
+        1755216000004,
+        null
+      ],
+      [
+        1755216000005,
+        null
+      ],
+      [
+        1755216000006,
+        null
+      ]
+    ],
+    "bodyBatteryValueDescriptorDTOList": [
+      {
+        "bodyBatteryValueDescriptorIndex": 0,
+        "bodyBatteryValueDescriptorKey": "timestamp"
+      },
+      {
+        "bodyBatteryValueDescriptorIndex": 1,
+        "bodyBatteryValueDescriptorKey": "bodyBatteryLevel"
+      }
+    ],
+    "bodyBatteryDynamicFeedbackEvent": {
+      "eventTimestampGmt": "2025-08-15T19:33:30.0",
+      "bodyBatteryLevel": "VERY_LOW",
+      "feedbackShortType": "SLEEP_PREPARATION_STRESSFUL_AND_INACTIVE",
+      "feedbackLongType": "SLEEP_PREPARATION_STRESSFUL_AND_INACTIVE_AND_BB_LOW"
+    },
+    "bodyBatteryActivityEvent": [
+      {
+        "eventType": "SLEEP",
+        "eventStartTimeGmt": "2025-08-14T21:34:05.0",
+        "timezoneOffset": 10800000,
+        "durationInMilliseconds": 25020000,
+        "bodyBatteryImpact": 64,
+        "feedbackType": "NONE",
+        "shortFeedback": "NONE"
+      },
+      {
+        "eventType": "STRESS",
+        "eventStartTimeGmt": "2025-08-15T07:54:23.0",
+        "timezoneOffset": 10800000,
+        "durationInMilliseconds": 3300000,
+        "bodyBatteryImpact": -8,
+        "feedbackType": "STRESS",
+        "shortFeedback": "STRESSFUL_PERIOD"
+      },
+      {
+        "eventType": "STRESS",
+        "eventStartTimeGmt": "2025-08-15T13:35:08.0",
+        "timezoneOffset": 10800000,
+        "durationInMilliseconds": 8460000,
+        "bodyBatteryImpact": -13,
+        "feedbackType": "STRESS_LONG",
+        "shortFeedback": "NEED_A_LITTLE_BREAK"
+      }
+    ],
+    "endOfDayBodyBatteryDynamicFeedbackEvent": {
+      "eventTimestampGmt": "2025-08-14T23:08:16.0",
+      "bodyBatteryLevel": "HIGH",
+      "feedbackShortType": "SLEEP_TIME_PASSED_STRESSFUL_AND_INACTIVE",
+      "feedbackLongType": "SLEEP_TIME_PASSED_STRESSFUL_AND_INACTIVE"
+    }
+  }
+]

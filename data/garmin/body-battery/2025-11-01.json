@@ -1,0 +1,97 @@
+[
+  {
+    "date": "2025-11-01",
+    "charged": 70,
+    "drained": 85,
+    "startTimestampGMT": "2025-10-31T21:00:00.0",
+    "endTimestampGMT": "2025-11-01T21:00:00.0",
+    "startTimestampLocal": "2025-11-01T00:00:00.0",
+    "endTimestampLocal": "2025-11-02T00:00:00.0",
+    "bodyBatteryValuesArray": [
+      [
+        1761944400000,
+        20
+      ],
+      [
+        1761972840000,
+        73
+      ],
+      [
+        1761977700000,
+        83
+      ],
+      [
+        1762001100000,
+        31
+      ],
+      [
+        1762002000000,
+        30
+      ],
+      [
+        1762026120000,
+        5
+      ]
+    ],
+    "bodyBatteryValueDescriptorDTOList": [
+      {
+        "bodyBatteryValueDescriptorIndex": 0,
+        "bodyBatteryValueDescriptorKey": "timestamp"
+      },
+      {
+        "bodyBatteryValueDescriptorIndex": 1,
+        "bodyBatteryValueDescriptorKey": "bodyBatteryLevel"
+      }
+    ],
+    "bodyBatteryDynamicFeedbackEvent": {
+      "eventTimestampGmt": "2025-11-01T19:44:21.0",
+      "bodyBatteryLevel": "VERY_LOW",
+      "feedbackShortType": "SLEEP_PREPARATION_STRESSFUL_AND_INACTIVE",
+      "feedbackLongType": "SLEEP_PREPARATION_STRESSFUL_AND_INACTIVE_AND_BB_LOW"
+    },
+    "bodyBatteryActivityEvent": [
+      {
+        "eventType": "SLEEP",
+        "eventStartTimeGmt": "2025-11-01T01:34:37.0",
+        "timezoneOffset": 10800000,
+        "durationInMilliseconds": 16800000,
+        "bodyBatteryImpact": 40,
+        "feedbackType": "NONE",
+        "shortFeedback": "NONE"
+      },
+      {
+        "eventType": "STRESS",
+        "eventStartTimeGmt": "2025-11-01T08:07:45.0",
+        "timezoneOffset": 10800000,
+        "durationInMilliseconds": 1740000,
+        "bodyBatteryImpact": -6,
+        "feedbackType": "STRESS",
+        "shortFeedback": "STRESSFUL_PERIOD"
+      },
+      {
+        "eventType": "STRESS",
+        "eventStartTimeGmt": "2025-11-01T09:22:30.0",
+        "timezoneOffset": 10800000,
+        "durationInMilliseconds": 3240000,
+        "bodyBatteryImpact": -9,
+        "feedbackType": "STRESS",
+        "shortFeedback": "STRESSFUL_PERIOD"
+      },
+      {
+        "eventType": "STRESS",
+        "eventStartTimeGmt": "2025-11-01T14:15:05.0",
+        "timezoneOffset": 10800000,
+        "durationInMilliseconds": 5820000,
+        "bodyBatteryImpact": -9,
+        "feedbackType": "STRESS",
+        "shortFeedback": "STRESSFUL_PERIOD"
+      }
+    ],
+    "endOfDayBodyBatteryDynamicFeedbackEvent": {
+      "eventTimestampGmt": "2025-11-01T02:57:45.0",
+      "bodyBatteryLevel": "HIGH",
+      "feedbackShortType": "SLEEP_TIME_PASSED_RECOVERING_AND_INACTIVE",
+      "feedbackLongType": "SLEEP_TIME_PASSED_RECOVERING_AND_INACTIVE"
+    }
+  }
+]

@@ -1,0 +1,807 @@
+{
+  "metadata": {
+    "created": "2026-01-05",
+    "description": "Детальный лог питания с расчетом калорий и макронутриентов",
+    "goals": {
+      "training_days_calories": 2000,
+      "rest_days_calories": 1800,
+      "protein_target": 150,
+      "fats_target": 70,
+      "carbs_training_days": "higher",
+      "carbs_rest_days": "moderate"
+    }
+  },
+  "entries": [
+    {
+      "date": "2026-01-05",
+      "had_workout": false,
+      "meals": [
+        {
+          "meal": "Обед",
+          "time": "13:00",
+          "items": [
+            {
+              "food": "куриная грудка",
+              "amount": 200.0,
+              "unit": "г",
+              "calories": 330.0,
+              "protein": 62.0,
+              "fats": 7.2,
+              "carbs": 0.0
+            },
+            {
+              "food": "картофель запечённый",
+              "amount": 200.0,
+              "unit": "г",
+              "calories": 186.0,
+              "protein": 5.0,
+              "fats": 0.2,
+              "carbs": 42.0
+            },
+            {
+              "food": "овощи",
+              "amount": 100.0,
+              "unit": "г",
+              "calories": 30.0,
+              "protein": 2.0,
+              "fats": 0.3,
+              "carbs": 7.0
+            },
+            {
+              "food": "масло",
+              "amount": 5.0,
+              "unit": "г",
+              "calories": 44.2,
+              "protein": 0.0,
+              "fats": 5.0,
+              "carbs": 0.0
+            }
+          ]
+        },
+        {
+          "meal": "Перекус",
+          "time": "16:00",
+          "items": [
+            {
+              "food": "кофе черный",
+              "amount": 1.0,
+              "unit": "чашка",
+              "calories": 2.0,
+              "protein": 0.1,
+              "fats": 0.0,
+              "carbs": 0.0
+            },
+            {
+              "food": "имбирное печенье",
+              "amount": 1.0,
+              "unit": "шт",
+              "calories": 55.0,
+              "protein": 0.75,
+              "fats": 2.0,
+              "carbs": 8.0
+            }
+          ]
+        }
+      ],
+      "water_liters": 1.5,
+      "totals": {
+        "calories": 647.2,
+        "protein": 69.85,
+        "fats": 14.7,
+        "carbs": 57.0
+      },
+      "targets": {
+        "calories": 1800,
+        "protein": 150,
+        "fats": 70
+      },
+      "created_at": "2026-01-05T18:18:13.698192"
+    },
+    {
+      "date": "2026-01-06",
+      "had_workout": false,
+      "meals": [
+        {
+          "meal": "Бранч",
+          "time": "12:00",
+          "items": [
+            {
+              "food": "гречка зелёная варёная",
+              "amount": 250.0,
+              "unit": "г",
+              "calories": 407.5,
+              "protein": 14.75,
+              "fats": 4.0,
+              "carbs": 76.5,
+              "note": "Гречка зелёная на воде, варёная"
+            },
+            {
+              "food": "лосось запечённый",
+              "amount": 120.0,
+              "unit": "г",
+              "calories": 247.2,
+              "protein": 26.4,
+              "fats": 14.4,
+              "carbs": 0.0,
+              "note": "Лосось запечённый"
+            },
+            {
+              "food": "авокадо",
+              "amount": 80.0,
+              "unit": "г",
+              "calories": 128.0,
+              "protein": 1.6,
+              "fats": 12.0,
+              "carbs": 7.2,
+              "note": "Половина авокадо"
+            }
+          ]
+        },
+        {
+          "meal": "Перекус",
+          "time": "16:05",
+          "items": [
+            {
+              "food": "хлеб чёрный",
+              "amount": 30.0,
+              "unit": "г",
+              "calories": 49.5,
+              "protein": 2.0,
+              "fats": 0.4,
+              "carbs": 10.3,
+              "note": "Кусок ржаного хлеба"
+            },
+            {
+              "food": "холодец",
+              "amount": 89.0,
+              "unit": "г",
+              "calories": 40.05,
+              "protein": 6.23,
+              "fats": 1.34,
+              "carbs": 0.89,
+              "note": "Холодец РЕМИТ, вес с фото весов"
+            },
+            {
+              "food": "горчица зернистая",
+              "amount": 5.0,
+              "unit": "г",
+              "calories": 8.1,
+              "protein": 0.3,
+              "fats": 0.3,
+              "carbs": 1.1,
+              "note": "1 чайная ложка горчицы"
+            }
+          ]
+        },
+        {
+          "meal": "Ранний ужин",
+          "time": "19:00",
+          "items": [
+            {
+              "food": "курица бедро без кожи (тушёная)",
+              "amount": 192.8,
+              "unit": "г",
+              "calories": 212.1,
+              "protein": 42.4,
+              "fats": 4.4,
+              "carbs": 0.0,
+              "note": "Сырой вес: 385.6 г, съедено 1/2 блюда"
+            },
+            {
+              "food": "фасоль стручковая замороженная (тушёная)",
+              "amount": 81.95,
+              "unit": "г",
+              "calories": 25.4,
+              "protein": 1.5,
+              "fats": 0.1,
+              "carbs": 5.7,
+              "note": "Сырой вес: 163.9 г, съедено 1/2 блюда"
+            },
+            {
+              "food": "цветная капуста замороженная (тушёная)",
+              "amount": 72.65,
+              "unit": "г",
+              "calories": 18.2,
+              "protein": 1.4,
+              "fats": 0.2,
+              "carbs": 3.6,
+              "note": "Сырой вес: 145.3 г, съедено 1/2 блюда"
+            },
+            {
+              "food": "масло подсолнечное",
+              "amount": 2.5,
+              "unit": "г",
+              "calories": 22.1,
+              "protein": 0.0,
+              "fats": 2.5,
+              "carbs": 0.0,
+              "note": "1 ч.л., съедено 1/2 блюда"
+            },
+            {
+              "food": "соевый соус",
+              "amount": 5.0,
+              "unit": "г",
+              "calories": 2.7,
+              "protein": 0.4,
+              "fats": 0.0,
+              "carbs": 0.2,
+              "note": "2 ч.л., съедено 1/2 блюда"
+            }
+          ],
+          "totals": {
+            "calories": 280.5,
+            "protein": 45.7,
+            "fats": 7.2,
+            "carbs": 9.5,
+            "note": "Расчёт по items. Пользователь указал ~329 ккал, но это может быть с учётом готового веса или других факторов."
+          },
+          "note": "Блюдо: тушёная курица (бедро без кожи, без видимого жира) + стручковая фасоль + цветная капуста. Всего в блюде (сырой эквивалент): 709.8 г. Съедено: 1/2 блюда (~354.9 г по сырому эквиваленту). КБЖУ считалось по сырому весу (корректно при тушении; готовый вес мог быть меньше из-за испарения воды)."
+        },
+        {
+          "meal": "Вечерний перекус",
+          "time": "21:45",
+          "items": [
+            {
+              "food": "салат с кальмаром",
+              "amount": 0.5,
+              "unit": "порция",
+              "calories": 213.0,
+              "protein": 23.0,
+              "fats": 7.0,
+              "carbs": 14.0,
+              "note": "Состав на весь салат: щупальца кальмара в масле (2 банки, масло слито, кальмар промокнут), огурцы (2 шт средние), шпинат свежий (1 пакет 50 г), сок лимона (1/3 лимона), оливковое масло (2 ч.л. ~10 г), апельсин (1/2 шт). Съедено: 1/2 салата. КБЖУ оценка из-за неизвестного чистого веса кальмара после сливания масла (диапазон: 210-320 ккал, ориентир ~213 ккал). @@TODO@@: взвешивать кальмар после сливания масла для точности."
+            },
+            {
+              "food": "Guinness 0.0",
+              "amount": 250.0,
+              "unit": "мл",
+              "calories": 42.5,
+              "protein": 0.0,
+              "fats": 0.0,
+              "carbs": 9.5,
+              "note": "Банка 500 мл, выпито 1/2 банки = 250 мл. Официальные данные: 17 ккал и 3.8 г углеводов на 100 мл."
+            }
+          ]
+        }
+      ],
+      "totals": {
+        "calories": 1416.4,
+        "protein": 120.0,
+        "fats": 46.6,
+        "carbs": 129.0,
+        "note": "Бранч: 782.7 ккал. Перекус: 97.6 ккал. Ранний ужин: 280.5 ккал. Вечерний перекус: 255.5 ккал."
+      },
+      "targets": {
+        "calories": 1800,
+        "protein": 150,
+        "fats": 70
+      },
+      "created_at": "2026-01-07T02:00:00"
+    },
+    {
+      "date": "2026-01-07",
+      "had_workout": false,
+      "meals": [
+        {
+          "meal": "Quinoa Tuna Bowl",
+          "time": "13:30",
+          "items": [
+            {
+              "food": "Quinoa Tuna Bowl",
+              "amount": null,
+              "unit": "г",
+              "calories": 597.0,
+              "protein": 25.8,
+              "fats": 24.2,
+              "carbs": 69.2
+            }
+          ],
+          "totals": {
+            "calories": 597.0,
+            "protein": 25.8,
+            "fats": 24.2,
+            "carbs": 69.2
+          }
+        },
+        {
+          "meal": "Cherry & Tonka Bean Brazil Filter Coffee",
+          "time": "13:54",
+          "items": [
+            {
+              "food": "Cherry & Tonka Bean Brazil Filter Coffee",
+              "amount": null,
+              "unit": "г",
+              "calories": 75.0,
+              "protein": 0.0,
+              "fats": 0.0,
+              "carbs": 18.3
+            }
+          ],
+          "totals": {
+            "calories": 75.0,
+            "protein": 0.0,
+            "fats": 0.0,
+            "carbs": 18.3
+          }
+        },
+        {
+          "meal": "Перекус",
+          "time": "18:45",
+          "items": [
+            {
+              "food": "EXPONENTA HIGH-PRO «Вишня-пломбир»",
+              "amount": 160.0,
+              "unit": "г",
+              "calories": 99.0,
+              "protein": 20.0,
+              "fats": 0.0,
+              "carbs": 4.8,
+              "note": "Высокобелковый десерт. На 100г: 62 ккал, 12.5г белка, 3.0г углеводов (жиры не указаны на упаковке). На упаковку 160г: 99 ккал, 20г белка (по данным с упаковки). Жиры рассчитаны как ~0г (возможно, минимальное количество)."
+            },
+            {
+              "food": "семена и орехи (смесь)",
+              "amount": 12.5,
+              "unit": "г",
+              "calories": 75.0,
+              "protein": 2.5,
+              "fats": 6.5,
+              "carbs": 3.0,
+              "note": "1 столовая ложка (оценка 10-15г, взято среднее 12.5г). Точный состав не указан (семечки/льняные/чиа/орехи). КБЖУ оценка: 60-90 ккал, 2-3г белка, 5-8г жиров, 2-4г углеводов (взято среднее). @@TODO@@: взвесить ложку и уточнить состав для точного учёта."
+            }
+          ],
+          "totals": {
+            "calories": 174.0,
+            "protein": 22.5,
+            "fats": 6.5,
+            "carbs": 7.8
+          }
+        },
+        {
+          "meal": "Протеиновый напиток",
+          "time": "20:19",
+          "items": [
+            {
+              "food": "LIFE PROTEIN Tree of Life (Hot Chocolate)",
+              "amount": 30.0,
+              "unit": "г",
+              "calories": 128.0,
+              "protein": 24.0,
+              "fats": 2.9,
+              "carbs": 1.55,
+              "note": "2 мерные ложки (2 level scoops) = 30г порошка. Разведено в 500 мл воды (вода = 0 ккал). Производитель: TREE OF LIFE. Банка 450г, 15 порций. Сайт: www.treeoflife.ru"
+            }
+          ],
+          "totals": {
+            "calories": 128.0,
+            "protein": 24.0,
+            "fats": 2.9,
+            "carbs": 1.55
+          }
+        },
+        {
+          "meal": "Обед",
+          "time": "18:00",
+          "items": [
+            {
+              "food": "яйцо",
+              "amount": 100.0,
+              "unit": "г",
+              "calories": 157.0,
+              "protein": 12.7,
+              "fats": 11.5,
+              "carbs": 0.7
+            },
+            {
+              "food": "лук",
+              "amount": 50.0,
+              "unit": "г",
+              "calories": 23.5,
+              "protein": 0.7,
+              "fats": 0.0,
+              "carbs": 5.2
+            },
+            {
+              "food": "томат черри",
+              "amount": 120.0,
+              "unit": "г",
+              "calories": 21.6,
+              "protein": 1.1,
+              "fats": 0.2,
+              "carbs": 4.7
+            },
+            {
+              "food": "сливочное масло",
+              "amount": 15.0,
+              "unit": "г",
+              "calories": 132.6,
+              "protein": 0.0,
+              "fats": 15.0,
+              "carbs": 0.0
+            },
+            {
+              "food": "сыр",
+              "amount": 30.0,
+              "unit": "г",
+              "calories": 108.9,
+              "protein": 6.9,
+              "fats": 9.0,
+              "carbs": 0.0
+            }
+          ],
+          "totals": {
+            "calories": 443.6,
+            "protein": 21.4,
+            "fats": 35.7,
+            "carbs": 10.6
+          }
+        }
+      ],
+      "totals": {
+        "calories": 1417.6,
+        "protein": 93.7,
+        "fats": 69.3,
+        "carbs": 107.4
+      }
+    },
+    {
+      "date": "2026-01-08",
+      "had_workout": false,
+      "meals": [
+        {
+          "meal": "Завтрак",
+          "time": "18:24",
+          "items": [
+            {
+              "food": "пшённая каша",
+              "amount": 200.0,
+              "unit": "г",
+              "calories": 240.0,
+              "protein": 6.0,
+              "fats": 0.8,
+              "carbs": 52.0
+            },
+            {
+              "food": "яйцо",
+              "amount": 100.0,
+              "unit": "г",
+              "calories": 157.0,
+              "protein": 12.7,
+              "fats": 11.5,
+              "carbs": 0.7
+            },
+            {
+              "food": "томат черри",
+              "amount": 60.0,
+              "unit": "г",
+              "calories": 10.8,
+              "protein": 0.5,
+              "fats": 0.1,
+              "carbs": 2.3
+            },
+            {
+              "food": "огурец",
+              "amount": 50.0,
+              "unit": "г",
+              "calories": 8.0,
+              "protein": 0.3,
+              "fats": 0.1,
+              "carbs": 1.8
+            }
+          ],
+          "totals": {
+            "calories": 415.8,
+            "protein": 19.5,
+            "fats": 12.5,
+            "carbs": 56.8
+          }
+        },
+        {
+          "meal": "Суп Рассольник \"Московский\"",
+          "time": "19:08",
+          "items": [
+            {
+              "food": "Суп Рассольник \"Московский\"",
+              "amount": null,
+              "unit": "г",
+              "calories": 129.1,
+              "protein": 10.0,
+              "fats": 3.8,
+              "carbs": 14.0
+            }
+          ],
+          "totals": {
+            "calories": 129.1,
+            "protein": 10.0,
+            "fats": 3.8,
+            "carbs": 14.0
+          }
+        },
+        {
+          "meal": "Ужин",
+          "time": "20:25",
+          "items": [
+            {
+              "food": "лук",
+              "amount": 30.0,
+              "unit": "г",
+              "calories": 14.1,
+              "protein": 0.4,
+              "fats": 0.0,
+              "carbs": 3.1
+            },
+            {
+              "food": "укроп",
+              "amount": 8.0,
+              "unit": "г",
+              "calories": 8.0,
+              "protein": 0.8,
+              "fats": 0.4,
+              "carbs": 1.2
+            },
+            {
+              "food": "томат",
+              "amount": 100.0,
+              "unit": "г",
+              "calories": 18.0,
+              "protein": 0.9,
+              "fats": 0.2,
+              "carbs": 3.9
+            },
+            {
+              "food": "салатные листья",
+              "amount": 100.0,
+              "unit": "г",
+              "calories": 100.0,
+              "protein": 10.0,
+              "fats": 5.0,
+              "carbs": 15.0
+            },
+            {
+              "food": "сыр",
+              "amount": 35.0,
+              "unit": "г",
+              "calories": 127.0,
+              "protein": 8.0,
+              "fats": 10.5,
+              "carbs": 0.0
+            },
+            {
+              "food": "семечки",
+              "amount": 15.0,
+              "unit": "г",
+              "calories": 15.0,
+              "protein": 1.5,
+              "fats": 0.8,
+              "carbs": 2.2
+            },
+            {
+              "food": "греческий йогурт",
+              "amount": 30.0,
+              "unit": "г",
+              "calories": 30.0,
+              "protein": 3.0,
+              "fats": 1.5,
+              "carbs": 4.5
+            },
+            {
+              "food": "огурец",
+              "amount": 150.0,
+              "unit": "г",
+              "calories": 24.0,
+              "protein": 1.0,
+              "fats": 0.2,
+              "carbs": 5.4
+            },
+            {
+              "food": "тунец",
+              "amount": 85.0,
+              "unit": "г",
+              "calories": 85.0,
+              "protein": 8.5,
+              "fats": 4.2,
+              "carbs": 12.8
+            },
+            {
+              "food": "лимонный сок",
+              "amount": 5.0,
+              "unit": "г",
+              "calories": 5.0,
+              "protein": 0.5,
+              "fats": 0.2,
+              "carbs": 0.8
+            }
+          ],
+          "totals": {
+            "calories": 426.1,
+            "protein": 34.6,
+            "fats": 23.0,
+            "carbs": 48.9
+          }
+        },
+        {
+          "meal": "Перекус",
+          "time": "21:12",
+          "items": [
+            {
+              "food": "угря",
+              "amount": 50.0,
+              "unit": "г",
+              "calories": 134.0,
+              "protein": 6.5,
+              "fats": 12.0,
+              "carbs": 0.5
+            },
+            {
+              "food": "картофель отварной",
+              "amount": 60.0,
+              "unit": "г",
+              "calories": 48.0,
+              "protein": 1.2,
+              "fats": 0.1,
+              "carbs": 10.2
+            }
+          ],
+          "totals": {
+            "calories": 182.0,
+            "protein": 7.7,
+            "fats": 12.1,
+            "carbs": 10.7
+          }
+        }
+      ],
+      "totals": {
+        "calories": 1153.0,
+        "protein": 71.8,
+        "fats": 51.4,
+        "carbs": 130.4
+      }
+    },
+    {
+      "date": "2026-01-09",
+      "had_workout": false,
+      "meals": [
+        {
+          "meal": "Вечерний перекус",
+          "time": "01:01",
+          "items": [
+            {
+              "food": "кефир 4%",
+              "amount": 250.0,
+              "unit": "г",
+              "calories": 140.0,
+              "protein": 7.5,
+              "fats": 10.0,
+              "carbs": 10.0
+            }
+          ]
+        },
+        {
+          "meal": "Ужин",
+          "time": "18:59",
+          "items": [
+            {
+              "food": "винегрет",
+              "amount": 200.0,
+              "unit": "г",
+              "calories": 140.0,
+              "protein": 3.0,
+              "fats": 7.0,
+              "carbs": 21.0
+            },
+            {
+              "food": "подсолнечное масло",
+              "amount": 15.0,
+              "unit": "г",
+              "calories": 132.6,
+              "protein": 0.0,
+              "fats": 15.0,
+              "carbs": 0.0
+            }
+          ]
+        },
+        {
+          "meal": "Ужин",
+          "time": "19:08",
+          "items": [
+            {
+              "food": "жаренная картошка",
+              "amount": 150.0,
+              "unit": "г",
+              "calories": 478.5,
+              "protein": 5.1,
+              "fats": 22.5,
+              "carbs": 54.0
+            }
+          ]
+        },
+        {
+          "meal": "Ужин",
+          "time": "19:09",
+          "items": [
+            {
+              "food": "мясной фарш",
+              "amount": 200.0,
+              "unit": "г",
+              "calories": 500.0,
+              "protein": 40.0,
+              "fats": 40.0,
+              "carbs": 0.0
+            }
+          ]
+        },
+        {
+          "meal": "Ужин",
+          "time": "19:14",
+          "items": [
+            {
+              "food": "шоколадка Twix",
+              "amount": 25.0,
+              "unit": "г",
+              "calories": 121.8,
+              "protein": 1.6,
+              "fats": 6.1,
+              "carbs": 15.8
+            }
+          ]
+        },
+        {
+          "meal": "Ужин",
+          "time": "19:18",
+          "items": [
+            {
+              "food": "ром",
+              "amount": 80.0,
+              "unit": "г",
+              "calories": 200.0,
+              "protein": 9.6,
+              "fats": 14.4,
+              "carbs": 24.0
+            }
+          ]
+        }
+      ],
+      "totals": {
+        "calories": 1712.9,
+        "protein": 66.8,
+        "fats": 115.0,
+        "carbs": 124.8
+      }
+    },
+    {
+      "date": "2026-01-10",
+      "had_workout": false,
+      "meals": [
+        {
+          "meal": "Обед",
+          "time": "14:27",
+          "items": [
+            {
+              "food": "гречаники",
+              "amount": 510.0,
+              "unit": "г",
+              "calories": 765.0,
+              "protein": 28.0,
+              "fats": 30.6,
+              "carbs": 91.8
+            },
+            {
+              "food": "томатный соус",
+              "amount": 30.0,
+              "unit": "г",
+              "calories": 15.9,
+              "protein": 2.4,
+              "fats": 0.0,
+              "carbs": 1.5
+            }
+          ]
+        }
+      ],
+      "totals": {
+        "calories": 810.0,
+        "protein": 46.0,
+        "fats": 54.0,
+        "carbs": 42.0
+      }
+    }
+  ]
+}

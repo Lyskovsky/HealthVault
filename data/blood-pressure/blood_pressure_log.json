@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "created": "2026-01-08",
+    "description": "Лог артериального давления",
+    "device": "Omron Evolv BP7000",
+    "protocol": "7 дней: утром (1 час после пробуждения) + вечером (перед сном), 2 измерения с интервалом 1 мин"
+  },
+  "measurements": [
+    {
+      "date": "2026-01-08",
+      "time": "morning",
+      "measurement_1": {
+        "systolic": 141,
+        "diastolic": 94,
+        "pulse": null,
+        "timestamp": "2026-01-08T08:00:00"
+      },
+      "measurement_2": {
+        "systolic": 138,
+        "diastolic": 85,
+        "pulse": null,
+        "timestamp": "2026-01-08T08:01:00"
+      },
+      "average": {
+        "systolic": 139.5,
+        "diastolic": 89.5,
+        "pulse": null
+      },
+      "conditions": {
+        "time_after_wakeup_minutes": 60,
+        "before_food": true,
+        "before_coffee": true,
+        "before_workout": true,
+        "stress_level": "normal"
+      }
+    }
+  ],
+  "weekly_averages": []
+}

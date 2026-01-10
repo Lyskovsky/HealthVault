@@ -1,0 +1,97 @@
+[
+  {
+    "date": "2025-12-15",
+    "charged": 58,
+    "drained": 74,
+    "startTimestampGMT": "2025-12-14T21:00:00.0",
+    "endTimestampGMT": "2025-12-15T21:00:00.0",
+    "startTimestampLocal": "2025-12-15T00:00:00.0",
+    "endTimestampLocal": "2025-12-16T00:00:00.0",
+    "bodyBatteryValuesArray": [
+      [
+        1765756620000,
+        27
+      ],
+      [
+        1765774260000,
+        73
+      ],
+      [
+        1765776960000,
+        80
+      ],
+      [
+        1765802880000,
+        54
+      ],
+      [
+        1765803600000,
+        54
+      ],
+      [
+        1765827180000,
+        18
+      ]
+    ],
+    "bodyBatteryValueDescriptorDTOList": [
+      {
+        "bodyBatteryValueDescriptorIndex": 0,
+        "bodyBatteryValueDescriptorKey": "timestamp"
+      },
+      {
+        "bodyBatteryValueDescriptorIndex": 1,
+        "bodyBatteryValueDescriptorKey": "bodyBatteryLevel"
+      }
+    ],
+    "bodyBatteryDynamicFeedbackEvent": {
+      "eventTimestampGmt": "2025-12-15T19:33:53.0",
+      "bodyBatteryLevel": "MODERATE",
+      "feedbackShortType": "SLEEP_PREPARATION_RECOVERING_AND_INTENSIVE_EXERCISE",
+      "feedbackLongType": "SLEEP_PREPARATION_RECOVERING_AND_INTENSIVE_EXERCISE"
+    },
+    "bodyBatteryActivityEvent": [
+      {
+        "eventType": "SLEEP",
+        "eventStartTimeGmt": "2025-12-15T00:31:33.0",
+        "timezoneOffset": 10800000,
+        "durationInMilliseconds": 18480000,
+        "bodyBatteryImpact": 50,
+        "feedbackType": "NONE",
+        "shortFeedback": "NONE"
+      },
+      {
+        "eventType": "RECOVERY",
+        "eventStartTimeGmt": "2025-12-15T08:15:06.0",
+        "timezoneOffset": 10800000,
+        "durationInMilliseconds": 2460000,
+        "bodyBatteryImpact": -1,
+        "feedbackType": "RECOVERY_BODY_BATTERY_NOT_INCREASE",
+        "shortFeedback": "RESTFUL_PERIOD"
+      },
+      {
+        "eventType": "RECOVERY",
+        "eventStartTimeGmt": "2025-12-15T09:02:26.0",
+        "timezoneOffset": 10800000,
+        "durationInMilliseconds": 4140000,
+        "bodyBatteryImpact": -1,
+        "feedbackType": "RECOVERY_LONG_BODY_BATTERY_NOT_INCREASE",
+        "shortFeedback": "LONG_RESTFUL_PERIOD"
+      },
+      {
+        "eventType": "ACTIVITY",
+        "eventStartTimeGmt": "2025-12-15T16:12:36.0",
+        "timezoneOffset": 10800000,
+        "durationInMilliseconds": 3240000,
+        "bodyBatteryImpact": -8,
+        "feedbackType": "EXERCISE_TRAINING_EFFECT_3",
+        "shortFeedback": "IMPROVING_ANAEROBIC_CAPACITY_AND_SPEED"
+      }
+    ],
+    "endOfDayBodyBatteryDynamicFeedbackEvent": {
+      "eventTimestampGmt": "2025-12-14T21:30:14.0",
+      "bodyBatteryLevel": "HIGH",
+      "feedbackShortType": "SLEEP_TIME_PASSED_BALANCED_AND_INACTIVE",
+      "feedbackLongType": "SLEEP_TIME_PASSED_BALANCED_AND_INACTIVE"
+    }
+  }
+]

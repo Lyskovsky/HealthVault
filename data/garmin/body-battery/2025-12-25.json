@@ -1,0 +1,79 @@
+[
+  {
+    "date": "2025-12-25",
+    "charged": 61,
+    "drained": 71,
+    "startTimestampGMT": "2025-12-24T21:00:00.0",
+    "endTimestampGMT": "2025-12-25T21:00:00.0",
+    "startTimestampLocal": "2025-12-25T00:00:00.0",
+    "endTimestampLocal": "2025-12-26T00:00:00.0",
+    "bodyBatteryValuesArray": [
+      [
+        1766610000000,
+        22
+      ],
+      [
+        1766638260000,
+        73
+      ],
+      [
+        1766643480000,
+        83
+      ],
+      [
+        1766667060000,
+        50
+      ],
+      [
+        1766667600000,
+        49
+      ],
+      [
+        1766695860000,
+        12
+      ]
+    ],
+    "bodyBatteryValueDescriptorDTOList": [
+      {
+        "bodyBatteryValueDescriptorIndex": 0,
+        "bodyBatteryValueDescriptorKey": "timestamp"
+      },
+      {
+        "bodyBatteryValueDescriptorIndex": 1,
+        "bodyBatteryValueDescriptorKey": "bodyBatteryLevel"
+      }
+    ],
+    "bodyBatteryDynamicFeedbackEvent": {
+      "eventTimestampGmt": "2025-12-25T18:54:38.0",
+      "bodyBatteryLevel": "LOW",
+      "feedbackShortType": "SLEEP_PREPARATION_BALANCED_AND_INACTIVE",
+      "feedbackLongType": "SLEEP_PREPARATION_BALANCED_AND_INACTIVE_AND_BB_LOW"
+    },
+    "bodyBatteryActivityEvent": [
+      {
+        "eventType": "SLEEP",
+        "eventStartTimeGmt": "2025-12-25T00:30:48.0",
+        "timezoneOffset": 10800000,
+        "durationInMilliseconds": 21300000,
+        "bodyBatteryImpact": 51,
+        "feedbackType": "NONE",
+        "shortFeedback": "NONE"
+      },
+      {
+        "eventType": "RECOVERY",
+        "eventStartTimeGmt": "2025-12-25T07:41:28.0",
+        "timezoneOffset": 10800000,
+        "durationInMilliseconds": 3960000,
+        "bodyBatteryImpact": -2,
+        "feedbackType": "RECOVERY_LONG_BODY_BATTERY_NOT_INCREASE",
+        "shortFeedback": "LONG_RESTFUL_PERIOD"
+      }
+    ],
+    "endOfDayBodyBatteryDynamicFeedbackEvent": {
+      "eventTimestampGmt": "2025-12-25T00:33:55.0",
+      "bodyBatteryLevel": "HIGH",
+      "feedbackShortType": "SLEEP_TIME_PASSED_RECOVERING_AND_INACTIVE",
+      "feedbackLongType": "SLEEP_TIME_PASSED_RECOVERING_AND_INACTIVE"
+    }
+  }
+]

@@ -1,0 +1,79 @@
+[
+  {
+    "date": "2025-09-12",
+    "charged": 68,
+    "drained": 69,
+    "startTimestampGMT": "2025-09-11T21:00:00.0",
+    "endTimestampGMT": "2025-09-12T21:00:00.0",
+    "startTimestampLocal": "2025-09-12T00:00:00.0",
+    "endTimestampLocal": "2025-09-13T00:00:00.0",
+    "bodyBatteryValuesArray": [
+      [
+        1757624760000,
+        18
+      ],
+      [
+        1757652840000,
+        73
+      ],
+      [
+        1757659860000,
+        86
+      ],
+      [
+        1757681640000,
+        48
+      ],
+      [
+        1757682000000,
+        48
+      ],
+      [
+        1757710260000,
+        18
+      ]
+    ],
+    "bodyBatteryValueDescriptorDTOList": [
+      {
+        "bodyBatteryValueDescriptorIndex": 0,
+        "bodyBatteryValueDescriptorKey": "timestamp"
+      },
+      {
+        "bodyBatteryValueDescriptorIndex": 1,
+        "bodyBatteryValueDescriptorKey": "bodyBatteryLevel"
+      }
+    ],
+    "bodyBatteryDynamicFeedbackEvent": {
+      "eventTimestampGmt": "2025-09-12T20:25:38.0",
+      "bodyBatteryLevel": "MODERATE",
+      "feedbackShortType": "SLEEP_PREPARATION_STRESSFUL_AND_INACTIVE",
+      "feedbackLongType": "SLEEP_PREPARATION_STRESSFUL_AND_INACTIVE"
+    },
+    "bodyBatteryActivityEvent": [
+      {
+        "eventType": "SLEEP",
+        "eventStartTimeGmt": "2025-09-11T21:59:33.0",
+        "timezoneOffset": 10800000,
+        "durationInMilliseconds": 32340000,
+        "bodyBatteryImpact": 68,
+        "feedbackType": "NONE",
+        "shortFeedback": "NONE"
+      },
+      {
+        "eventType": "STRESS",
+        "eventStartTimeGmt": "2025-09-12T16:15:51.0",
+        "timezoneOffset": 10800000,
+        "durationInMilliseconds": 5280000,
+        "bodyBatteryImpact": -12,
+        "feedbackType": "STRESS",
+        "shortFeedback": "STRESSFUL_PERIOD"
+      }
+    ],
+    "endOfDayBodyBatteryDynamicFeedbackEvent": {
+      "eventTimestampGmt": "2025-09-11T23:37:45.0",
+      "bodyBatteryLevel": "HIGH",
+      "feedbackShortType": "SLEEP_TIME_PASSED_BALANCED_AND_INTENSIVE_EXERCISE",
+      "feedbackLongType": "SLEEP_TIME_PASSED_BALANCED_AND_INTENSIVE_EXERCISE"
+    }
+  }
+]

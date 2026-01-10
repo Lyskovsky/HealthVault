@@ -1,0 +1,139 @@
+{
+  "dailySleepDTO": {
+    "id": 1746397448000,
+    "userProfilePK": 58868684,
+    "calendarDate": "2025-05-05",
+    "sleepTimeSeconds": 23340,
+    "napTimeSeconds": 1380,
+    "sleepWindowConfirmed": true,
+    "sleepWindowConfirmationType": "enhanced_confirmed_final",
+    "sleepStartTimestampGMT": 1746397448000,
+    "sleepEndTimestampGMT": 1746423008000,
+    "sleepStartTimestampLocal": 1746408248000,
+    "sleepEndTimestampLocal": 1746433808000,
+    "autoSleepStartTimestampGMT": null,
+    "autoSleepEndTimestampGMT": null,
+    "sleepQualityTypePK": null,
+    "sleepResultTypePK": null,
+    "unmeasurableSleepSeconds": 0,
+    "deepSleepSeconds": 3780,
+    "lightSleepSeconds": 16380,
+    "remSleepSeconds": 3180,
+    "awakeSleepSeconds": 2220,
+    "deviceRemCapable": true,
+    "retro": false,
+    "sleepFromDevice": true,
+    "averageRespirationValue": 13.0,
+    "lowestRespirationValue": 9.0,
+    "highestRespirationValue": 21.0,
+    "awakeCount": 2,
+    "avgSleepStress": 22.0,
+    "ageGroup": "ADULT",
+    "sleepScoreFeedback": "POSITIVE_DEEP",
+    "sleepScoreInsight": "POSITIVE_STRESSFUL_DAY",
+    "sleepScorePersonalizedInsight": "GENERAL_POS_FAIR_OR_POOR_SLEEP",
+    "sleepScores": {
+      "totalDuration": {
+        "qualifierKey": "FAIR",
+        "optimalStart": 28200.0,
+        "optimalEnd": 28200.0
+      },
+      "stress": {
+        "qualifierKey": "FAIR",
+        "optimalStart": 0.0,
+        "optimalEnd": 15.0
+      },
+      "awakeCount": {
+        "qualifierKey": "FAIR",
+        "optimalStart": 0.0,
+        "optimalEnd": 1.0
+      },
+      "overall": {
+        "value": 70,
+        "qualifierKey": "FAIR"
+      },
+      "remPercentage": {
+        "value": 14,
+        "qualifierKey": "FAIR",
+        "optimalStart": 21.0,
+        "optimalEnd": 31.0,
+        "idealStartInSeconds": 4901.4,
+        "idealEndInSeconds": 7235.4
+      },
+      "restlessness": {
+        "qualifierKey": "FAIR",
+        "optimalStart": 0.0,
+        "optimalEnd": 5.0
+      },
+      "lightPercentage": {
+        "value": 70,
+        "qualifierKey": "FAIR",
+        "optimalStart": 30.0,
+        "optimalEnd": 64.0,
+        "idealStartInSeconds": 7002.0,
+        "idealEndInSeconds": 14937.6
+      },
+      "deepPercentage": {
+        "value": 16,
+        "qualifierKey": "GOOD",
+        "optimalStart": 16.0,
+        "optimalEnd": 33.0,
+        "idealStartInSeconds": 3734.4,
+        "idealEndInSeconds": 7702.2
+      }
+    },
+    "sleepVersion": 2,
+    "sleepNeed": {
+      "userProfilePk": 58868684,
+      "calendarDate": "2025-05-05",
+      "deviceId": 3404099129,
+      "timestampGmt": "2025-05-04T07:12:08",
+      "baseline": 470,
+      "actual": 490,
+      "feedback": "INCREASED",
+      "trainingFeedback": "NO_CHANGE",
+      "sleepHistoryAdjustment": "INCREASING_LOW_QUALITY",
+      "hrvAdjustment": "NO_CHANGE",
+      "napAdjustment": "NO_CHANGE",
+      "displayedForTheDay": true,
+      "preferredActivityTracker": true
+    },
+    "nextSleepNeed": {
+      "userProfilePk": 58868684,
+      "calendarDate": "2025-05-06",
+      "deviceId": 3404099129,
+      "timestampGmt": "2025-05-05T15:42:23",
+      "baseline": 470,
+      "actual": 470,
+      "feedback": "NO_CHANGE_BALANCED",
+      "trainingFeedback": "NO_CHANGE",
+      "sleepHistoryAdjustment": "INCREASING_LOW_QUALITY",
+      "hrvAdjustment": "NO_CHANGE",
+      "napAdjustment": "DECREASING",
+      "displayedForTheDay": true,
+      "preferredActivityTracker": true
+    },
+    "dailyNapDTOS": [
+      {
+        "userProfilePK": 58868684,
+        "deviceId": 3404099129,
+        "calendarDate": "2025-05-05",
+        "napTimeSec": 1380,
+        "napStartTimestampGMT": "2025-05-05T06:46:53",
+        "napEndTimestampGMT": "2025-05-05T07:09:53",
+        "napFeedback": "IDEAL_DURATION_LOW_NEED",
+        "napSource": 0,
+        "napStartTimeOffset": 180,
+        "napEndTimeOffset": 180,
+        "createTimestampGMT": null,
+        "updateTimestampGMT": null
+      }
+    ]
+  },
+  "sleepMovement": null,
+  "remSleepData": true,
+  "sleepLevels": null,
+  "skinTempDataExists": false,
+  "bodyBatteryChange": 37,
+  "restingHeartRate": 60
+}

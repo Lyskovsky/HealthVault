@@ -1,0 +1,954 @@
+{
+  "patient_info": {
+    "name": "Лысковский Александр Викторович",
+    "birth_date": "1977-05-15",
+    "birth_date_formatted": "15.05.1977",
+    "age_calculation_note": "Возраст вычисляется динамически из birth_date. На 2026-01-07: 48 лет. После 15.05.2026 будет 49 лет.",
+    "height_cm": 170,
+    "blood_group": "B (III)",
+    "rh_factor": "Rh+ (положительный)",
+    "blood_group_full": "B (III) Rh+",
+    "note": "Группа крови определена 2026-01-07 (INVITRO). Важно для переливаний и медицинских процедур."
+  },
+  "blood_tests": [
+    {
+      "file": "blood-tests/blood_cmd_2025-08-10_general.pdf",
+      "filename": "blood_cmd_2025-08-10_general.pdf",
+      "date": "2025-08-10",
+      "year": 2025,
+      "laboratory": "cmd",
+      "type": "blood_tests",
+      "status": "historical",
+      "note": "Исторический файл. Липидограмма присутствует: Total 4.97, LDL 3.29, HDL 1.56, TG 0.58. Основные решения принимать по свежим анализам.",
+      "values": {
+        "WBC": null,
+        "RBC": null,
+        "Hb": null,
+        "Ht": null,
+        "PLT": null,
+        "ESR": null
+      }
+    },
+    {
+      "file": "blood-tests/blood_cmd_2025-08-10_общий-анализ-крови_1.pdf",
+      "filename": "blood_cmd_2025-08-10_общий-анализ-крови_1.pdf",
+      "date": "2025-08-10",
+      "year": 2025,
+      "laboratory": "cmd",
+      "type": "blood",
+      "analysis_type": "общий анализ крови",
+      "values": {
+        "Hb": 162.0,
+        "testosterone": 10.08,
+        "vitamin_d": 25.0
+      },
+      "source": "CMD"
+    },
+    {
+      "file": "blood-tests/blood_emias_2025-01-23_general_9.pdf",
+      "filename": "blood_emias_2025-01-23_general_9.pdf",
+      "date": "2025-01-23",
+      "year": 2025,
+      "laboratory": "emias",
+      "type": "blood",
+      "analysis_type": "глюкоза",
+      "status": "historical",
+      "note": "Исторический файл. Основные решения принимать по свежим анализам.",
+      "values": {},
+      "source": "ЕМИАС.ИНФО"
+    },
+    {
+      "file": "blood-tests/blood_emias_2025-01-23_general_10.pdf",
+      "filename": "blood_emias_2025-01-23_general_10.pdf",
+      "date": "2025-01-23",
+      "year": 2025,
+      "laboratory": "emias",
+      "type": "blood",
+      "analysis_type": "АСТ",
+      "values": {},
+      "source": "ЕМИАС.ИНФО"
+    },
+    {
+      "file": "blood-tests/blood_emias_2025-01-23_general_11.pdf",
+      "filename": "blood_emias_2025-01-23_general_11.pdf",
+      "date": "2025-01-23",
+      "year": 2025,
+      "laboratory": "emias",
+      "type": "blood",
+      "analysis_type": "другое",
+      "values": {},
+      "source": "ЕМИАС.ИНФО"
+    },
+    {
+      "file": "blood-tests/blood_emias_2025-01-23_general_12.pdf",
+      "filename": "blood_emias_2025-01-23_general_12.pdf",
+      "date": "2025-01-23",
+      "year": 2025,
+      "laboratory": "emias",
+      "type": "blood",
+      "analysis_type": "АЛТ",
+      "values": {},
+      "source": "ЕМИАС.ИНФО"
+    },
+    {
+      "file": "blood-tests/blood_emias_2025-01-23_general_13.pdf",
+      "filename": "blood_emias_2025-01-23_general_13.pdf",
+      "date": "2025-01-23",
+      "year": 2025,
+      "laboratory": "emias",
+      "type": "blood",
+      "analysis_type": "креатинин",
+      "values": {},
+      "source": "ЕМИАС.ИНФО"
+    },
+    {
+      "file": "blood-tests/blood_emias_2025-01-23_general_14.pdf",
+      "filename": "blood_emias_2025-01-23_general_14.pdf",
+      "date": "2025-01-23",
+      "year": 2025,
+      "laboratory": "emias",
+      "type": "blood",
+      "analysis_type": "ЛПНП",
+      "values": {},
+      "source": "ЕМИАС.ИНФО"
+    },
+    {
+      "file": "blood-tests/blood_emias_2025-01-23_general_15.pdf",
+      "filename": "blood_emias_2025-01-23_general_15.pdf",
+      "date": "2025-01-23",
+      "year": 2025,
+      "laboratory": "emias",
+      "type": "blood",
+      "analysis_type": "холестерин",
+      "values": {},
+      "source": "ЕМИАС.ИНФО"
+    },
+    {
+      "file": "blood-tests/blood_emias_2025-01-23_general_16.pdf",
+      "filename": "blood_emias_2025-01-23_general_16.pdf",
+      "date": "2025-01-23",
+      "year": 2025,
+      "laboratory": "emias",
+      "type": "blood",
+      "analysis_type": "С-реактивный белок",
+      "values": {},
+      "source": "ЕМИАС.ИНФО"
+    },
+    {
+      "file": "blood-tests/blood_emias_2025-01-23_general_17.pdf",
+      "filename": "blood_emias_2025-01-23_general_17.pdf",
+      "date": "2025-01-23",
+      "year": 2025,
+      "laboratory": "emias",
+      "type": "blood",
+      "analysis_type": "общий анализ крови",
+      "values": {},
+      "source": "ЕМИАС.ИНФО"
+    },
+    {
+      "file": "blood-tests/blood_emias_2024-09-02_general_3.pdf",
+      "filename": "blood_emias_2024-09-02_general_3.pdf",
+      "date": "2024-09-02",
+      "year": 2024,
+      "laboratory": "emias",
+      "type": "blood",
+      "analysis_type": "СОЭ",
+      "values": {},
+      "source": "ЕМИАС.ИНФО"
+    },
+    {
+      "file": "blood-tests/blood_emias_2024-09-02_general_4.pdf",
+      "filename": "blood_emias_2024-09-02_general_4.pdf",
+      "date": "2024-09-02",
+      "year": 2024,
+      "laboratory": "emias",
+      "type": "blood",
+      "analysis_type": "АСТ",
+      "values": {},
+      "source": "ЕМИАС.ИНФО"
+    },
+    {
+      "file": "blood-tests/blood_emias_2024-09-02_general_5.pdf",
+      "filename": "blood_emias_2024-09-02_general_5.pdf",
+      "date": "2024-09-02",
+      "year": 2024,
+      "laboratory": "emias",
+      "type": "blood",
+      "analysis_type": "коагулограмма",
+      "values": {},
+      "source": "ЕМИАС.ИНФО"
+    },
+    {
+      "file": "blood-tests/blood_emias_2024-08-26_general_1.pdf",
+      "filename": "blood_emias_2024-08-26_general_1.pdf",
+      "date": "2024-08-26",
+      "year": 2024,
+      "laboratory": "emias",
+      "type": "blood",
+      "analysis_type": "другое",
+      "values": {},
+      "source": "ЕМИАС.ИНФО"
+    },
+    {
+      "file": "blood-tests/blood_emias_2024-07-12_general_3.pdf",
+      "filename": "blood_emias_2024-07-12_general_3.pdf",
+      "date": "2024-07-12",
+      "year": 2024,
+      "laboratory": "emias",
+      "type": "blood",
+      "analysis_type": "общий анализ крови",
+      "values": {},
+      "source": "ЕМИАС.ИНФО"
+    },
+    {
+      "file": "blood-tests/blood_emias_2024-07-12_general_4.pdf",
+      "filename": "blood_emias_2024-07-12_general_4.pdf",
+      "date": "2024-07-12",
+      "year": 2024,
+      "laboratory": "emias",
+      "type": "blood",
+      "analysis_type": "холестерин",
+      "values": {},
+      "source": "ЕМИАС.ИНФО"
+    },
+    {
+      "file": "blood-tests/blood_emias_2024-07-12_general_5.pdf",
+      "filename": "blood_emias_2024-07-12_general_5.pdf",
+      "date": "2024-07-12",
+      "year": 2024,
+      "laboratory": "emias",
+      "type": "blood",
+      "analysis_type": "глюкоза",
+      "values": {},
+      "source": "ЕМИАС.ИНФО"
+    },
+    {
+      "file": "blood-tests/blood_invitro_2016-05-23_general.pdf",
+      "filename": "blood_invitro_2016-05-23_general.pdf",
+      "date": "2016-05-23",
+      "year": 2016,
+      "laboratory": "invitro",
+      "type": "blood_tests",
+      "values": {
+        "WBC": null,
+        "RBC": null,
+        "Hb": null,
+        "Ht": null,
+        "PLT": null,
+        "ESR": null
+      }
+    },
+    {
+      "file": "blood-tests/blood_invitro_2015-11-24_general.pdf",
+      "filename": "blood_invitro_2015-11-24_general.pdf",
+      "date": "2015-11-24",
+      "year": 2015,
+      "laboratory": "invitro",
+      "type": "blood_tests",
+      "values": {
+        "WBC": null,
+        "RBC": null,
+        "Hb": null,
+        "Ht": null,
+        "PLT": null,
+        "ESR": null
+      }
+    },
+    {
+      "file": "blood-tests/blood_invitro_2015-09-21_protein-electrophoresis.pdf",
+      "filename": "blood_invitro_2015-09-21_protein-electrophoresis.pdf",
+      "date": "2015-09-21",
+      "year": 2015,
+      "laboratory": "invitro",
+      "type": "blood_tests",
+      "values": {}
+    },
+    {
+      "file": "blood-tests/blood_invitro_2016-09-16_protein-electrophoresis.pdf",
+      "filename": "blood_invitro_2016-09-16_protein-electrophoresis.pdf",
+      "date": "2016-09-16",
+      "year": 2016,
+      "laboratory": "invitro",
+      "type": "blood",
+      "analysis_type": "электрофорез белковых фракций + биохимия",
+      "values": {
+        "albumin_percent": 65.5,
+        "albumin_g_l": 46.5,
+        "alpha1_percent": 3.8,
+        "alpha1_g_l": 2.7,
+        "alpha2_percent": 8.7,
+        "alpha2_g_l": 6.2,
+        "beta_percent": 9.6,
+        "beta_g_l": 6.8,
+        "gamma_percent": 12.4,
+        "gamma_g_l": 8.8,
+        "total_protein": 71,
+        "total_protein_unit": "g/L",
+        "a_g_ratio": 1.90,
+        "sodium": 140,
+        "sodium_unit": "ммоль/л",
+        "sodium_reference": "136-145",
+        "chloride": 105,
+        "chloride_unit": "ммоль/л",
+        "chloride_reference": "101-110",
+        "iron": 19.00,
+        "iron_unit": "мкмоль/л",
+        "iron_reference": "11.64-31.33"
+      },
+      "status": "historical",
+      "source": "INVITRO-Сибирь"
+    },
+    {
+      "file": "blood-tests/blood_invitro_2014-04-28_tick-encephalitis.pdf",
+      "filename": "blood_invitro_2014-04-28_tick-encephalitis.pdf",
+      "date": "2014-04-28",
+      "year": 2014,
+      "laboratory": "invitro",
+      "type": "blood_tests",
+      "values": {}
+    },
+    {
+      "file": "blood-tests/blood_invitro_2013-06-06_sti-pcr.pdf",
+      "filename": "blood_invitro_2013-06-06_sti-pcr.pdf",
+      "date": "2013-06-06",
+      "year": 2013,
+      "laboratory": "invitro",
+      "type": "blood",
+      "analysis_type": "ПЦР на ИППП (инфекции, передающиеся половым путем)",
+      "order_number": "115982070",
+      "values": {
+        "hpv_high_risk": "не обнаружено",
+        "chlamydia_trachomatis": "не обнаружено",
+        "mycoplasma_hominis": "не обнаружено",
+        "ureaplasma_spp": "не обнаружено",
+        "gardnerella_vaginalis": "не обнаружено",
+        "neisseria_gonorrhoeae": "не обнаружено",
+        "trichomonas_vaginalis": "не обнаружено",
+        "mycoplasma_genitalium": "не обнаружено",
+        "candida_albicans": "не обнаружено",
+        "hpv_16": "не обнаружено",
+        "hpv_18": "не обнаружено",
+        "hpv_31": "не обнаружено",
+        "hpv_33": "не обнаружено",
+        "hpv_35": "не обнаружено",
+        "hpv_39": "не обнаружено",
+        "hpv_45": "не обнаружено",
+        "hpv_51": "не обнаружено",
+        "hpv_52": "не обнаружено",
+        "hpv_56": "не обнаружено",
+        "hpv_58": "не обнаружено",
+        "hpv_59": "не обнаружено",
+        "herpes_simplex_1_2": "не обнаружено",
+        "cytomegalovirus": "не обнаружено",
+        "overall_result": "все патогены не обнаружены"
+      },
+      "status": "historical",
+      "note": "Заказ не доступен для скачивания с сайта. Данные внесены на основе скриншота из личного кабинета.",
+      "source": "INVITRO"
+    },
+    {
+      "file": "blood-tests/blood_invitro_2013-06-06_smear-microscopy.pdf",
+      "filename": "blood_invitro_2013-06-06_smear-microscopy.pdf",
+      "date": "2013-06-06",
+      "year": 2013,
+      "laboratory": "invitro",
+      "type": "blood",
+      "analysis_type": "Микроскопическое исследование мазка (уретрального)",
+      "order_number": "115982069",
+      "values": {
+        "urethral_epithelial_cells": "8-16 в поле зрения",
+        "leukocytes": "3-4 в поле зрения",
+        "microflora": "Грам (+) кокки",
+        "trichomonas_vaginalis": "не обнаружены",
+        "neisseria_gonorrhoeae": "не обнаружены",
+        "overall_result": "нормальная картина"
+      },
+      "status": "historical",
+      "note": "Заказ не доступен для скачивания с сайта. Данные внесены на основе скриншота из личного кабинета. Микроскопическая картина в норме.",
+      "source": "INVITRO"
+    },
+    {
+      "file": "blood-tests/blood_invitro_2026-01-07_blood-group.pdf",
+      "filename": "blood_invitro_2026-01-07_blood-group.pdf",
+      "date": "2026-01-07",
+      "year": 2026,
+      "laboratory": "invitro",
+      "type": "blood",
+      "analysis_type": "группа крови и резус-фактор",
+      "values": {
+        "blood_group": "B (III)",
+        "rh_factor": "Rh+ (положительный)"
+      },
+      "sample_collection_date": "2026-01-07 11:04",
+      "result_date": "2026-01-07 20:02",
+      "status": "latest",
+      "source": "INVITRO"
+    },
+    {
+      "file": "blood-tests/blood_invitro_2026-01-07_hba1c.pdf",
+      "filename": "blood_invitro_2026-01-07_hba1c.pdf",
+      "date": "2026-01-07",
+      "year": 2026,
+      "laboratory": "invitro",
+      "type": "blood",
+      "analysis_type": "HbA1c (гликированный гемоглобин)",
+      "values": {
+        "hba1c": 5.2,
+        "unit": "%",
+        "status": "норма",
+        "note": "Норма < 5.7% (ADA), < 6.0% (ВОЗ). Повышенный риск: 5.7-6.4% (ADA), 6.0-6.4% (ВОЗ). Диабет: >= 6.5%"
+      },
+      "sample_collection_date": "2026-01-07 11:04",
+      "result_date": "2026-01-07 20:02",
+      "status": "latest",
+      "source": "INVITRO"
+    },
+    {
+      "file": "blood-tests/blood_invitro_2026-01-07_biochemistry-comprehensive.pdf",
+      "filename": "blood_invitro_2026-01-07_biochemistry-comprehensive.pdf",
+      "date": "2026-01-07",
+      "year": 2026,
+      "laboratory": "invitro",
+      "type": "blood",
+      "analysis_type": "комплексная биохимия (липиды, печень, почки, гормоны, витамины)",
+      "status": "latest",
+      "sample_collection_date": "2026-01-07 11:04",
+      "result_date": "2026-01-08 03:29",
+      "values": {
+        "insulin": 4.9,
+        "insulin_unit": "мкЕд/мл",
+        "insulin_reference": "2.7-10.4",
+        "alt": 30,
+        "alt_unit": "Ед/л",
+        "alt_reference": "<41",
+        "ast": 24,
+        "ast_unit": "Ед/л",
+        "ast_reference": "<37",
+        "bilirubin_total": 17.8,
+        "bilirubin_total_unit": "мкмоль/л",
+        "bilirubin_total_reference": "3.4-20.5",
+        "bilirubin_direct": 5.5,
+        "bilirubin_direct_unit": "мкмоль/л",
+        "bilirubin_direct_reference": "<8.6",
+        "bilirubin_indirect": 12.3,
+        "bilirubin_indirect_unit": "мкмоль/л",
+        "bilirubin_indirect_reference": "<19.0",
+        "ggt": 36,
+        "ggt_unit": "Ед/л",
+        "ggt_reference": "<49",
+        "glucose": 5.1,
+        "glucose_unit": "ммоль/л",
+        "glucose_reference": "4.1-6",
+        "creatinine": 81,
+        "creatinine_unit": "мкмоль/л",
+        "creatinine_reference": "64-104",
+        "egfr_ckd_epi": 98,
+        "egfr_unit": "мл/мин/1.73м²",
+        "egfr_reference": ">60",
+        "triglycerides": 0.94,
+        "triglycerides_unit": "ммоль/л",
+        "triglycerides_reference": "<1.7",
+        "cholesterol_total": 5.86,
+        "cholesterol_total_unit": "ммоль/л",
+        "cholesterol_total_status": "выше нормы",
+        "cholesterol_total_note": "Желательно <5.0 ммоль/л (ESC/EAS 2019). Текущее значение требует внимания.",
+        "cholesterol_hdl": 1.64,
+        "cholesterol_hdl_unit": "ммоль/л",
+        "cholesterol_hdl_reference": ">1.0",
+        "cholesterol_ldl": 3.79,
+        "cholesterol_ldl_unit": "ммоль/л",
+        "cholesterol_ldl_status": "выше нормы",
+        "cholesterol_ldl_note": "Желательно <3.0 ммоль/л при отсутствии факторов риска (ESC/EAS 2019). При наличии факторов риска целевые значения определяет врач.",
+        "cholesterol_non_hdl": 4.22,
+        "cholesterol_non_hdl_unit": "ммоль/л",
+        "cholesterol_non_hdl_status": "выше нормы",
+        "cholesterol_non_hdl_note": "Желательно <3.8 ммоль/л (ESC/EAS 2019)",
+        "alkaline_phosphatase": 54,
+        "alkaline_phosphatase_unit": "Ед/л",
+        "alkaline_phosphatase_reference": "40-150",
+        "ferritin": 286,
+        "ferritin_unit": "мкг/л",
+        "ferritin_reference": "22-275",
+        "ferritin_status": "выше референса",
+        "ferritin_note": "По ВОЗ (2020): дефицит <15 мкг/л, <70 мкг/л при воспалении. Текущее значение может быть нормальным при отсутствии воспаления.",
+        "homocysteine": 9.26,
+        "homocysteine_unit": "мкмоль/л",
+        "homocysteine_reference": "5.46-16.2",
+        "testosterone": 12.09,
+        "testosterone_unit": "нмоль/л",
+        "testosterone_reference": "8.9-42",
+        "testosterone_issam_threshold": 12,
+        "testosterone_note": "Нижний диагностический порог ISSAM: 12 нмоль/л. Текущее значение на границе.",
+        "testosterone_free": 16.0,
+        "testosterone_free_unit": "пг/мл",
+        "testosterone_free_reference": "9.57-40.6",
+        "vitamin_d": 33.5,
+        "vitamin_d_unit": "нг/мл",
+        "vitamin_d_status": "адекватный",
+        "vitamin_d_note": "<10 - выраженный дефицит; <20 - дефицит; 20-30 - недостаточность; 30-100 - адекватный уровень (целевые значения 30-60); >150 - возможен токсический эффект"
+      },
+      "source": "INVITRO",
+      "equipment": "Abbott, Alinity i / Snibe, Maglumi 4000 Plus/X8"
+    }
+  ],
+  "urine_tests": [
+    {
+      "file": "urine-tests/urine_invitro_2016-09-17_general.pdf",
+      "filename": "urine_invitro_2016-09-17_general.pdf",
+      "date": "2016-09-17",
+      "year": 2016,
+      "laboratory": "invitro",
+      "type": "urine_tests",
+      "values": {}
+    }
+  ],
+  "hormones": [
+    {
+      "file": "hormones/hormones_emias_2025-07-23_general_1.pdf",
+      "filename": "hormones_emias_2025-07-23_general_1.pdf",
+      "date": "2025-07-23",
+      "year": 2025,
+      "laboratory": "emias",
+      "type": "hormones",
+      "analysis_type": "глюкоза",
+      "values": {},
+      "source": "ЕМИАС.ИНФО"
+    },
+    {
+      "file": "hormones/hormones_invitro_2025-06-26_testosterone-tsh.pdf",
+      "filename": "hormones_invitro_2025-06-26_testosterone-tsh.pdf",
+      "date": "2025-06-26",
+      "year": 2025,
+      "laboratory": "invitro",
+      "type": "hormones",
+      "values": {
+        "testosterone": "10.72"
+      }
+    },
+    {
+      "file": "hormones/hormones_cmd_2025-06-25_testosterone-tsh.pdf",
+      "filename": "hormones_cmd_2025-06-25_testosterone-tsh.pdf",
+      "date": "2025-06-25",
+      "year": 2025,
+      "laboratory": "cmd",
+      "type": "hormones",
+      "values": {}
+    }
+  ],
+  "vitamins": [
+    {
+      "file": "vitamins/vitamins_cmd_2025-06-25_здоровье-кожи-волос-и-ногтей-(.pdf",
+      "filename": "vitamins_cmd_2025-06-25_здоровье-кожи-волос-и-ногтей-(.pdf",
+      "date": "2025-06-25",
+      "year": 2025,
+      "laboratory": "cmd",
+      "type": "vitamins",
+      "analysis_type": "здоровье кожи, волос и ногтей (витамины, микроэлементы, гормоны)",
+      "values": {
+        "testosterone": 0.4,
+        "vitamin_d": 25.0,
+        "vitamin_b12": 483.0
+      },
+      "source": "CMD"
+    },
+    {
+      "file": "vitamins/vitamins_invitro_2025-04-27_vitamin-d-b12.pdf",
+      "filename": "vitamins_invitro_2025-04-27_vitamin-d-b12.pdf",
+      "date": "2025-04-27",
+      "year": 2025,
+      "laboratory": "invitro",
+      "type": "vitamins",
+      "status": "historical",
+      "note": "Исторический файл. Основные решения принимать по свежим анализам.",
+      "values": {}
+    }
+  ],
+  "genetics": [
+    {
+      "file": "genetics/genetics_tsmt_2009-04-02_polymorphism.pdf",
+      "filename": "genetics_tsmt_2009-04-02_polymorphism.pdf",
+      "date": "2009-04-02",
+      "year": 2009,
+      "laboratory": "tsmt",
+      "type": "genetics",
+      "detailed_analysis": "data/genetics/genetic_analysis.md",
+      "key_findings": {
+        "thrombosis_risk": 1.33,
+        "mthfr_c677t": "C/T (heterozygous)",
+        "fto": "T/A (heterozygous)",
+        "adrb2": "C/C (normal)",
+        "adrb3": "T/C (heterozygous)",
+        "f5_leiden": "G/G (normal)",
+        "f2_prothrombin": "G/G (normal)",
+        "pai1": "5G/5G (normal)"
+      },
+      "recommendations": [
+        "Прием фолиевой кислоты (метафолин) курсами 2-3 раза/год",
+        "Контроль веса (ген FTO повышает риск ожирения)",
+        "Контроль холестерина (регулярные липидограммы)"
+      ]
+    },
+    {
+      "file": "genetics/genetics_tsmt_2016-06-01_dna-analysis.jpg",
+      "filename": "genetics_tsmt_2016-06-01_dna-analysis.jpg",
+      "date": "2016-06-01",
+      "year": 2016,
+      "laboratory": "tsmt",
+      "type": "genetics",
+      "type_detail": "Нутригеномика (выбор диеты)",
+      "genes_analyzed": [
+        "FABP2",
+        "PPARG",
+        "ADRB2",
+        "ADRB3",
+        "FTO",
+        "ADD1",
+        "CYP11B2",
+        "CYP1A2"
+      ]
+    }
+  ],
+  "covid_tests": [
+    {
+      "file": "covid-tests/covid_fdoctor_2021-01-04_antibodies.pdf",
+      "filename": "covid_fdoctor_2021-01-04_antibodies.pdf",
+      "date": "2021-01-04",
+      "year": 2021,
+      "laboratory": "fdoctor",
+      "type": "covid_tests"
+    },
+    {
+      "file": "covid-tests/covid_fdoctor_2021-01-04_pcr.pdf",
+      "filename": "covid_fdoctor_2021-01-04_pcr.pdf",
+      "date": "2021-01-04",
+      "year": 2021,
+      "laboratory": "fdoctor",
+      "type": "covid_tests"
+    },
+    {
+      "file": "covid-tests/covid_fdoctor_2021-04-09_antibodies.pdf",
+      "filename": "covid_fdoctor_2021-04-09_antibodies.pdf",
+      "date": "2021-04-09",
+      "year": 2021,
+      "laboratory": "fdoctor",
+      "type": "covid_tests"
+    },
+    {
+      "file": "covid-tests/covid_fdoctor_2021-06-29_antibodies.pdf",
+      "filename": "covid_fdoctor_2021-06-29_antibodies.pdf",
+      "date": "2021-06-29",
+      "year": 2021,
+      "laboratory": "fdoctor",
+      "type": "covid_tests"
+    },
+    {
+      "file": "covid-tests/covid_invitro_2021-12-03_antibodies.pdf",
+      "filename": "covid_invitro_2021-12-03_antibodies.pdf",
+      "date": "2021-12-03",
+      "year": 2021,
+      "laboratory": "invitro",
+      "type": "covid_tests"
+    },
+    {
+      "file": "covid-tests/covid_invitro_2021-12-04_pcr.pdf",
+      "filename": "covid_invitro_2021-12-04_pcr.pdf",
+      "date": "2021-12-04",
+      "year": 2021,
+      "laboratory": "invitro",
+      "type": "covid_tests"
+    },
+    {
+      "file": "covid-tests/covid_invitro_2022-01-22_antibodies.pdf",
+      "filename": "covid_invitro_2022-01-22_antibodies.pdf",
+      "date": "2022-01-22",
+      "year": 2022,
+      "laboratory": "invitro",
+      "type": "covid_tests"
+    },
+    {
+      "file": "covid-tests/covid_invitro_2022-01-22_pcr.pdf",
+      "filename": "covid_invitro_2022-01-22_pcr.pdf",
+      "date": "2022-01-22",
+      "year": 2022,
+      "laboratory": "invitro",
+      "type": "covid_tests",
+      "analysis_type": "ПЦР на РНК SARS-CoV-2 (мазок)",
+      "values": {
+        "result": "отрицательный",
+        "rna_detected": false,
+        "note": "РНК не обнаружена",
+        "sample_date": "2022-01-21 14:12",
+        "result_date": "2022-01-22 20:08"
+      },
+      "technology": "RealBest RNA SARS-CoV-2, RT-PCR",
+      "status": "historical",
+      "source": "INVITRO-Сибирь"
+    },
+    {
+      "file": "covid-tests/covid_invitro_2022-01-22_pcr_certificate_en.pdf",
+      "filename": "covid_invitro_2022-01-22_pcr_certificate_en.pdf",
+      "date": "2022-01-22",
+      "year": 2022,
+      "laboratory": "invitro",
+      "type": "covid_tests",
+      "analysis_type": "ПЦР на РНК SARS-CoV-2 (сертификат на английском)",
+      "values": {
+        "result": "отрицательный",
+        "rna_detected": false,
+        "note": "РНК не обнаружена",
+        "sample_date": "2022-01-21 14:12",
+        "result_date": "2022-01-22 20:08"
+      },
+      "technology": "RealBest RNA SARS-CoV-2, RT-PCR",
+      "status": "historical",
+      "note": "Сертификат на английском языке для того же теста",
+      "source": "INVITRO-Сибирь"
+    },
+    {
+      "file": "covid-tests/covid_invitro_2026-01-07_antibodies.pdf",
+      "filename": "covid_invitro_2026-01-07_antibodies.pdf",
+      "date": "2026-01-07",
+      "year": 2026,
+      "laboratory": "invitro",
+      "type": "covid_tests",
+      "analysis_type": "Антитела к RBD домену спайкового (S) белка SARS-CoV-2, IgG (количественный)",
+      "values": {
+        "antibodies_igg_bau_ml": 459.6,
+        "result": "положительный",
+        "threshold": ">=7.1 BAU/мл"
+      },
+      "technology": "Abbott (США)",
+      "sample_collection_date": "2026-01-07 11:04",
+      "result_date": "2026-01-07 16:50",
+      "status": "latest",
+      "note": "Самый свежий тест на антитела к COVID-19. Высокий уровень антител указывает на недавнюю вакцинацию или контакт с вирусом."
+    }
+  ],
+  "ultrasound": [
+    {
+      "file": "ultrasound/ultrasound_urinary-system_2021-03-01.docx",
+      "filename": "ultrasound_urinary-system_2021-03-01.docx",
+      "date": "2021-03-01",
+      "year": 2021,
+      "laboratory": "unknown",
+      "type": "ultrasound"
+    }
+  ],
+  "medical_records": [
+    {
+      "file": "medical-records/ecg_emias_2025-09-30_ecg_1.pdf",
+      "filename": "ecg_emias_2025-09-30_ecg_1.pdf",
+      "date": "2025-09-30",
+      "year": 2025,
+      "laboratory": "emias",
+      "type": "ecg",
+      "analysis_type": "ЭКГ",
+      "values": {},
+      "source": "ЕМИАС.ИНФО"
+    },
+    {
+      "file": "medical-records/ecg_emias_2025-01-23_ecg_3.pdf",
+      "filename": "ecg_emias_2025-01-23_ecg_3.pdf",
+      "date": "2025-01-23",
+      "year": 2025,
+      "laboratory": "emias",
+      "type": "ecg",
+      "analysis_type": "ЭКГ",
+      "values": {},
+      "source": "ЕМИАС.ИНФО"
+    },
+    {
+      "file": "medical-records/spirometry_emias_2025-01-23_spirometry_2.pdf",
+      "filename": "spirometry_emias_2025-01-23_spirometry_2.pdf",
+      "date": "2025-01-23",
+      "year": 2025,
+      "laboratory": "emias",
+      "type": "spirometry",
+      "analysis_type": "спирометрия",
+      "values": {},
+      "source": "ЕМИАС.ИНФО"
+    },
+    {
+      "file": "medical-records/medical-record_therapist_2021-03-01.docx",
+      "filename": "medical-record_therapist_2021-03-01.docx",
+      "date": "2021-03-01",
+      "year": 2021,
+      "laboratory": "unknown",
+      "type": "medical_records"
+    }
+  ],
+  "sports_tests": [
+    {
+      "file": "sports/sports_нейрософт_2017-05-22_вариабельность-сердечного-ритма.docx",
+      "filename": "sports_нейрософт_2017-05-22_вариабельность-сердечного-ритма.docx",
+      "date": "2017-05-22",
+      "year": 2017,
+      "laboratory": "нейрософт",
+      "type": "sports",
+      "analysis_type": "вариабельность сердечного ритма (ВРС)",
+      "source": "Нейрософт",
+      "values": {
+        "age": 40,
+        "weight": 80.1,
+        "height": 171,
+        "bmi": 27.4,
+        "bmi_status": "избыток",
+        "hr_rest": 70,
+        "hr_orthostatic": 74,
+        "hr_orthostatic_change_percent": 5.91,
+        "rhythm_class": 3,
+        "functional_state": -4,
+        "adaptation_reserves": 2,
+        "regulation_level": "патологическая стабилизация",
+        "autonomic_balance": "преобладание симпатического отдела",
+        "spectral_power": "низкая"
+      },
+      "recommendations": [
+        "Патологическая стабилизация модуляции ритма сердца",
+        "Низкий уровень вагальных, симпатических и гуморально-метаболических влияний",
+        "Текущее функциональное состояние значительно снижено",
+        "Адаптационные резервы организма удовлетворительные"
+      ],
+      "extracted_text": "sports/sports_нейрософт_2017-05-22_вариабельность-сердечного-ритма_extracted.txt"
+    },
+    {
+      "file": "sports/sports_unknown_2017-05-22_порог-анаэробного-обмена.xlsx",
+      "filename": "sports_unknown_2017-05-22_порог-анаэробного-обмена.xlsx",
+      "date": "2017-05-22",
+      "year": 2017,
+      "laboratory": "unknown",
+      "type": "sports",
+      "analysis_type": "порог анаэробного обмена (ПАНО)",
+      "source": "Неизвестно",
+      "values": {
+        "weight": 80.1,
+        "body_fat_percent": 27.1,
+        "visceral_fat_percent": 11,
+        "anp_threshold_hr": 171,
+        "muscle_fiber_type": "средневик, тяготеющий к спринту",
+        "coefficient": 1.68,
+        "training_zones": {
+          "recovery": "до 150 уд/мин",
+          "developing": "150-164 уд/мин",
+          "pulse_tempo": "164-171 уд/мин",
+          "anp": "171 уд/мин"
+        }
+      },
+      "lactate_data": [
+        {
+          "speed": 7.3,
+          "lactate": 1.6,
+          "hr": 134,
+          "glucose": 4.62
+        },
+        {
+          "speed": 8.0,
+          "lactate": 1.19,
+          "hr": 142,
+          "glucose": 4.22
+        },
+        {
+          "speed": 8.7,
+          "lactate": 1.32,
+          "hr": 148,
+          "glucose": 4.32
+        },
+        {
+          "speed": 9.5,
+          "lactate": 1.75,
+          "hr": 154,
+          "glucose": 4.34
+        },
+        {
+          "speed": 10.3,
+          "lactate": 2.5,
+          "hr": 161,
+          "glucose": 4.25
+        },
+        {
+          "speed": 11.1,
+          "lactate": 3.73,
+          "hr": 167,
+          "glucose": 4.99
+        },
+        {
+          "speed": 11.9,
+          "lactate": 4.53,
+          "hr": 173,
+          "glucose": 4.21
+        }
+      ],
+      "extracted_text": "sports/sports_unknown_2017-05-22_порог-анаэробного-обмена_extracted.txt"
+    },
+    {
+      "file": "sports/sports_unknown_2017-05-27_анализ-походки.pdf",
+      "filename": "sports_unknown_2017-05-27_анализ-походки.pdf",
+      "date": "2017-05-27",
+      "year": 2017,
+      "laboratory": "runlab",
+      "type": "sports",
+      "analysis_type": "GAIT-анализ (анализ походки)",
+      "source": "RUN LAB",
+      "values": {
+        "weight": 79,
+        "height": 171,
+        "foot_size": "42.5 rus / 9.5 us",
+        "pronation": "нейтральная",
+        "landing": "приземление на пятку",
+        "ankle_angle": "125.7°"
+      },
+      "recommendations": [
+        "Минимизировать выброс голени вперед",
+        "Ставить ногу при шаге ближе к центру тяжести",
+        "Следить за постановкой стоп (параллельно, не разворачиваясь наружу)",
+        "Рекомендуются кроссовки с повышенной амортизацией"
+      ],
+      "extracted_text": "sports/sports_unknown_2017-05-27_анализ-походки_extracted.txt"
+    }
+  ],
+  "sleepcycle": {
+    "fresh_data": [
+      {
+        "date": "2026-01-08",
+        "sleep_quality": "81",
+        "time_asleep_hours": 5.33,
+        "time_in_bed_hours": 8.48,
+        "snore_time_minutes": 0.0,
+        "heart_rate": null,
+        "mood": "Not set",
+        "notes": "Тренировка вечером:Трудный день",
+        "file": "sleepcycle/daily/2026-01-08.json"
+      },
+      {
+        "date": "2026-01-07",
+        "sleep_quality": "78",
+        "time_asleep_hours": 6.5,
+        "time_in_bed_hours": 7.47,
+        "snore_time_minutes": 154.98,
+        "heart_rate": null,
+        "mood": "OK",
+        "notes": "Усталость",
+        "file": "sleepcycle/daily/2026-01-07.json"
+      },
+      {
+        "date": "2026-01-06",
+        "sleep_quality": "87",
+        "time_asleep_hours": 7.48,
+        "time_in_bed_hours": 8.71,
+        "snore_time_minutes": 204.83,
+        "heart_rate": null,
+        "mood": "OK",
+        "notes": "Тренировка вечером:Трудный день",
+        "file": "sleepcycle/daily/2026-01-06.json"
+      }
+    ],
+    "historical_data": {
+      "note": "Исторические данные (до последнего года) доступны в data/sleepcycle/parsed/",
+      "export_file": "sleepcycle_export_2026-01-08.csv",
+      "export_date": "2026-01-08",
+      "total_records": 1332,
+      "historical_records": 1329,
+      "last_record_date": "2026-01-08"
+    }
+  }
+}

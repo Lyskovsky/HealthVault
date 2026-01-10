@@ -1,0 +1,88 @@
+[
+  {
+    "date": "2025-02-07",
+    "charged": 70,
+    "drained": 51,
+    "startTimestampGMT": "2025-02-06T21:00:00.0",
+    "endTimestampGMT": "2025-02-07T21:00:00.0",
+    "startTimestampLocal": "2025-02-07T00:00:00.0",
+    "endTimestampLocal": "2025-02-08T00:00:00.0",
+    "bodyBatteryValuesArray": [
+      [
+        1738886400001,
+        null
+      ],
+      [
+        1738886400002,
+        null
+      ],
+      [
+        1738886400003,
+        null
+      ],
+      [
+        1738886400004,
+        null
+      ],
+      [
+        1738886400005,
+        null
+      ],
+      [
+        1738886400006,
+        null
+      ]
+    ],
+    "bodyBatteryValueDescriptorDTOList": [
+      {
+        "bodyBatteryValueDescriptorIndex": 0,
+        "bodyBatteryValueDescriptorKey": "timestamp"
+      },
+      {
+        "bodyBatteryValueDescriptorIndex": 1,
+        "bodyBatteryValueDescriptorKey": "bodyBatteryLevel"
+      }
+    ],
+    "bodyBatteryDynamicFeedbackEvent": {
+      "eventTimestampGmt": "2025-02-07T19:39:17.0",
+      "bodyBatteryLevel": "MODERATE",
+      "feedbackShortType": "SLEEP_PREPARATION_RECOVERING_AND_INACTIVE",
+      "feedbackLongType": "SLEEP_PREPARATION_RECOVERING_AND_INACTIVE"
+    },
+    "bodyBatteryActivityEvent": [
+      {
+        "eventType": "SLEEP",
+        "eventStartTimeGmt": "2025-02-07T01:41:27.0",
+        "timezoneOffset": 10800000,
+        "durationInMilliseconds": 16080000,
+        "bodyBatteryImpact": 30,
+        "feedbackType": "NONE",
+        "shortFeedback": "NONE"
+      },
+      {
+        "eventType": "NAP",
+        "eventStartTimeGmt": "2025-02-07T07:56:35.0",
+        "timezoneOffset": 10800000,
+        "durationInMilliseconds": 7980000,
+        "bodyBatteryImpact": 11,
+        "feedbackType": "NAP_RECOVERING_BODY_BATTERY_INCREASE",
+        "shortFeedback": "RESTFUL_NAP"
+      },
+      {
+        "eventType": "RECOVERY",
+        "eventStartTimeGmt": "2025-02-07T14:54:25.0",
+        "timezoneOffset": 10800000,
+        "durationInMilliseconds": 3360000,
+        "bodyBatteryImpact": -2,
+        "feedbackType": "RECOVERY_BODY_BATTERY_NOT_INCREASE",
+        "shortFeedback": "RESTFUL_PERIOD"
+      }
+    ],
+    "endOfDayBodyBatteryDynamicFeedbackEvent": {
+      "eventTimestampGmt": "2025-02-07T00:42:50.0",
+      "bodyBatteryLevel": "HIGH",
+      "feedbackShortType": "SLEEP_TIME_PASSED_STRESSFUL_AND_INACTIVE",
+      "feedbackLongType": "SLEEP_TIME_PASSED_STRESSFUL_AND_INACTIVE"
+    }
+  }
+]

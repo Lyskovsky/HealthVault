@@ -1,0 +1,79 @@
+[
+  {
+    "date": "2025-06-10",
+    "charged": 20,
+    "drained": 20,
+    "startTimestampGMT": "2025-06-09T20:00:00.0",
+    "endTimestampGMT": "2025-06-10T20:00:00.0",
+    "startTimestampLocal": "2025-06-10T00:00:00.0",
+    "endTimestampLocal": "2025-06-11T00:00:00.0",
+    "bodyBatteryValuesArray": [
+      [
+        1749513600001,
+        null
+      ],
+      [
+        1749513600002,
+        null
+      ],
+      [
+        1749513600003,
+        null
+      ],
+      [
+        1749513600004,
+        null
+      ],
+      [
+        1749513600005,
+        null
+      ],
+      [
+        1749513600006,
+        null
+      ]
+    ],
+    "bodyBatteryValueDescriptorDTOList": [
+      {
+        "bodyBatteryValueDescriptorIndex": 0,
+        "bodyBatteryValueDescriptorKey": "timestamp"
+      },
+      {
+        "bodyBatteryValueDescriptorIndex": 1,
+        "bodyBatteryValueDescriptorKey": "bodyBatteryLevel"
+      }
+    ],
+    "bodyBatteryDynamicFeedbackEvent": {
+      "eventTimestampGmt": "2025-06-10T17:05:00.0",
+      "bodyBatteryLevel": "VERY_LOW",
+      "feedbackShortType": "SLEEP_PREPARATION_STRESSFUL_AND_INTENSIVE_EXERCISE",
+      "feedbackLongType": "SLEEP_PREPARATION_STRESSFUL_AND_INTENSIVE_EXERCISE_AND_BB_LOW"
+    },
+    "bodyBatteryActivityEvent": [
+      {
+        "eventType": "SLEEP",
+        "eventStartTimeGmt": "2025-06-09T21:23:44.0",
+        "timezoneOffset": 14400000,
+        "durationInMilliseconds": 28500000,
+        "bodyBatteryImpact": 20,
+        "feedbackType": "NONE",
+        "shortFeedback": "NONE"
+      },
+      {
+        "eventType": "ACTIVITY",
+        "eventStartTimeGmt": "2025-06-10T07:47:24.0",
+        "timezoneOffset": 14400000,
+        "durationInMilliseconds": 10380000,
+        "bodyBatteryImpact": -6,
+        "feedbackType": "EXERCISE_TRAINING_EFFECT_2",
+        "shortFeedback": "MAINTAINING_AEROBIC_BASE"
+      }
+    ],
+    "endOfDayBodyBatteryDynamicFeedbackEvent": {
+      "eventTimestampGmt": "2025-06-10T01:56:41.0",
+      "bodyBatteryLevel": "MODERATE",
+      "feedbackShortType": "SLEEP_TIME_PASSED_STRESSFUL_AND_ACTIVE_AND_EXERCISE",
+      "feedbackLongType": "SLEEP_TIME_PASSED_STRESSFUL_AND_ACTIVE_AND_EXERCISE"
+    }
+  }
+]

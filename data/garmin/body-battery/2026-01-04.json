@@ -1,0 +1,70 @@
+[
+  {
+    "date": "2026-01-04",
+    "charged": 63,
+    "drained": 80,
+    "startTimestampGMT": "2026-01-03T22:00:00.0",
+    "endTimestampGMT": "2026-01-04T21:00:00.0",
+    "startTimestampLocal": "2026-01-04T00:00:00.0",
+    "endTimestampLocal": "2026-01-05T00:00:00.0",
+    "bodyBatteryValuesArray": [
+      [
+        1767487320000,
+        34
+      ],
+      [
+        1767505140000,
+        74
+      ],
+      [
+        1767511800000,
+        92
+      ],
+      [
+        1767532860000,
+        49
+      ],
+      [
+        1767533040000,
+        49
+      ],
+      [
+        1767558420000,
+        22
+      ]
+    ],
+    "bodyBatteryValueDescriptorDTOList": [
+      {
+        "bodyBatteryValueDescriptorIndex": 0,
+        "bodyBatteryValueDescriptorKey": "timestamp"
+      },
+      {
+        "bodyBatteryValueDescriptorIndex": 1,
+        "bodyBatteryValueDescriptorKey": "bodyBatteryLevel"
+      }
+    ],
+    "bodyBatteryDynamicFeedbackEvent": {
+      "eventTimestampGmt": "2026-01-04T18:41:40.0",
+      "bodyBatteryLevel": "MODERATE",
+      "feedbackShortType": "SLEEP_PREPARATION_STRESSFUL_AND_INACTIVE",
+      "feedbackLongType": "SLEEP_PREPARATION_STRESSFUL_AND_INACTIVE"
+    },
+    "bodyBatteryActivityEvent": [
+      {
+        "eventType": "SLEEP",
+        "eventStartTimeGmt": "2026-01-04T00:44:26.0",
+        "timezoneOffset": 7200000,
+        "durationInMilliseconds": 24600000,
+        "bodyBatteryImpact": 57,
+        "feedbackType": "NONE",
+        "shortFeedback": "NONE"
+      }
+    ],
+    "endOfDayBodyBatteryDynamicFeedbackEvent": {
+      "eventTimestampGmt": "2026-01-04T03:21:32.0",
+      "bodyBatteryLevel": "HIGH",
+      "feedbackShortType": "SLEEP_TIME_PASSED_STRESSFUL_AND_INACTIVE",
+      "feedbackLongType": "SLEEP_TIME_PASSED_STRESSFUL_AND_INACTIVE"
+    }
+  }
+]

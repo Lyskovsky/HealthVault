@@ -1,0 +1,153 @@
+{
+  "dailySleepDTO": {
+    "id": 1740791365000,
+    "userProfilePK": 58868684,
+    "calendarDate": "2025-03-01",
+    "sleepTimeSeconds": 17939,
+    "napTimeSeconds": 11640,
+    "sleepWindowConfirmed": true,
+    "sleepWindowConfirmationType": "enhanced_confirmed_final",
+    "sleepStartTimestampGMT": 1740791365000,
+    "sleepEndTimestampGMT": 1740809844000,
+    "sleepStartTimestampLocal": 1740802165000,
+    "sleepEndTimestampLocal": 1740820644000,
+    "autoSleepStartTimestampGMT": null,
+    "autoSleepEndTimestampGMT": null,
+    "sleepQualityTypePK": null,
+    "sleepResultTypePK": null,
+    "unmeasurableSleepSeconds": 0,
+    "deepSleepSeconds": 1800,
+    "lightSleepSeconds": 14880,
+    "remSleepSeconds": 1260,
+    "awakeSleepSeconds": 540,
+    "deviceRemCapable": true,
+    "retro": false,
+    "sleepFromDevice": true,
+    "averageRespirationValue": 13.0,
+    "lowestRespirationValue": 10.0,
+    "highestRespirationValue": 21.0,
+    "awakeCount": 1,
+    "avgSleepStress": 45.0,
+    "ageGroup": "ADULT",
+    "sleepScoreFeedback": "NEGATIVE_SHORT_AND_POOR_QUALITY",
+    "sleepScoreInsight": "NEGATIVE_STRESSFUL_DAY",
+    "sleepScorePersonalizedInsight": "STRESS_NEG_GOOD_OR_WORSE_SLEEP_STRESSFUL_DAY",
+    "sleepScores": {
+      "totalDuration": {
+        "qualifierKey": "POOR",
+        "optimalStart": 28200.0,
+        "optimalEnd": 28200.0
+      },
+      "stress": {
+        "qualifierKey": "POOR",
+        "optimalStart": 0.0,
+        "optimalEnd": 15.0
+      },
+      "awakeCount": {
+        "qualifierKey": "EXCELLENT",
+        "optimalStart": 0.0,
+        "optimalEnd": 1.0
+      },
+      "overall": {
+        "value": 44,
+        "qualifierKey": "POOR"
+      },
+      "remPercentage": {
+        "value": 7,
+        "qualifierKey": "POOR",
+        "optimalStart": 21.0,
+        "optimalEnd": 31.0,
+        "idealStartInSeconds": 3767.19,
+        "idealEndInSeconds": 5561.09
+      },
+      "restlessness": {
+        "qualifierKey": "EXCELLENT",
+        "optimalStart": 0.0,
+        "optimalEnd": 5.0
+      },
+      "lightPercentage": {
+        "value": 83,
+        "qualifierKey": "POOR",
+        "optimalStart": 30.0,
+        "optimalEnd": 64.0,
+        "idealStartInSeconds": 5381.7,
+        "idealEndInSeconds": 11480.96
+      },
+      "deepPercentage": {
+        "value": 10,
+        "qualifierKey": "FAIR",
+        "optimalStart": 16.0,
+        "optimalEnd": 33.0,
+        "idealStartInSeconds": 2870.24,
+        "idealEndInSeconds": 5919.87
+      }
+    },
+    "sleepVersion": 2,
+    "sleepNeed": {
+      "userProfilePk": 58868684,
+      "calendarDate": "2025-03-01",
+      "deviceId": 3404099129,
+      "timestampGmt": "2025-02-28T05:31:26",
+      "baseline": 470,
+      "actual": 520,
+      "feedback": "HIGHLY_INCREASED",
+      "trainingFeedback": "NO_CHANGE",
+      "sleepHistoryAdjustment": "INCREASING",
+      "hrvAdjustment": "INCREASING",
+      "napAdjustment": "NO_CHANGE",
+      "displayedForTheDay": true,
+      "preferredActivityTracker": true
+    },
+    "nextSleepNeed": {
+      "userProfilePk": 58868684,
+      "calendarDate": "2025-03-02",
+      "deviceId": 3404099129,
+      "timestampGmt": "2025-03-01T17:53:40",
+      "baseline": 470,
+      "actual": 420,
+      "feedback": "DECREASED",
+      "trainingFeedback": "NO_CHANGE",
+      "sleepHistoryAdjustment": "INCREASING",
+      "hrvAdjustment": "INCREASING",
+      "napAdjustment": "DECREASING",
+      "displayedForTheDay": true,
+      "preferredActivityTracker": true
+    },
+    "dailyNapDTOS": [
+      {
+        "userProfilePK": 58868684,
+        "deviceId": 3404099129,
+        "calendarDate": "2025-03-01",
+        "napTimeSec": 3360,
+        "napStartTimestampGMT": "2025-03-01T07:39:24",
+        "napEndTimestampGMT": "2025-03-01T08:35:24",
+        "napFeedback": "LONG_DURATION_LOW_NEED",
+        "napSource": 0,
+        "napStartTimeOffset": 180,
+        "napEndTimeOffset": 180,
+        "createTimestampGMT": null,
+        "updateTimestampGMT": null
+      },
+      {
+        "userProfilePK": 58868684,
+        "deviceId": 3404099129,
+        "calendarDate": "2025-03-01",
+        "napTimeSec": 8280,
+        "napStartTimestampGMT": "2025-03-01T15:35:24",
+        "napEndTimestampGMT": "2025-03-01T17:53:24",
+        "napFeedback": "MULTIPLE_NAPS_DURING_DAY",
+        "napSource": 0,
+        "napStartTimeOffset": 180,
+        "napEndTimeOffset": 180,
+        "createTimestampGMT": null,
+        "updateTimestampGMT": null
+      }
+    ]
+  },
+  "sleepMovement": null,
+  "remSleepData": true,
+  "sleepLevels": null,
+  "skinTempDataExists": false,
+  "bodyBatteryChange": 14,
+  "restingHeartRate": 64
+}
