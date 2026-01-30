@@ -1,49 +1,56 @@
 
-# Roadmap
+# Roadmap (План развития)
 
 - [x] **3. Голосовой ввод**
     - [x] Распознавание голоса (Whisper/Telegram API)
     - [x] Парсинг съеденного из текста
 
-- [x] **Snapshot Testing for Nutrition Data**
-    - [x] Create test fixtures for nutrition data (10 variants based on recent logs)
-    - [x] exact match verification logic
+- [x] **Снэпшот-тестирование (Snapshot Testing)**
+    - [x] Создать тестовые данные (10 вариантов из реальных логов)
+    - [x] Еженедельная статистика (восстановление данных за 23-28 января)
+- [x] Исторические данные (восстановление данных за весь январь с 6-го числа)
+- [ ] Интеграция с Apple Health (через экспорт данных)
+  - [ ] Реализовать API для приема данных (вес, шаги, активные калории)
+    - [ ] Написать инструкцию для iOS Shortcuts (Команды)
 
-- [ ] **Apple Health Integration**
-    - [ ] Implement API endpoint for data ingestion (weight, steps, active calories)
-    - [ ] Create automation manual for iOS Shortcuts
+- [x] **Развертывание на сервере (24/7)**
+    - [x] Создать `DEPLOY.md` с инструкциями
+    - [x] Настроить автозапуск Docker
+    - [x] Настроить бэкап и доступ к данным
+    - [x] **Миграция на сервер в Амстердаме (VDSina)**
 
+- [ ] **Обслуживание и очистка**
+    - [x] **Очистка старого сервера (РФ)**: Полностью удалить Docker-контейнеры, образы, данные и код с сервера 95.142.45.135.
+    - [x] **Устранение дублей (Idempotency)**: Фильтр повторных обновлений Telegram.
+    - [ ] Проверить работу бэкапов на новом сервере
 
-- [ ] **Server Deployment (24/7 Availability)**
-    - [ ] Create `DEPLOY.md` with VPS instructions
-    - [ ] Configure systemd/Docker for auto-restart
-    - [ ] Setup remote data access (or sync)
+- [x] **Улучшение отчетов**
+    - [x] **Дневной статус**: Упростить (кол-во приемов, итоги КБЖУ, остаток vs цель).
+    - [x] **Недельный анализ**: Итоги за 7 дней, дефицит/профицит, рекомендации.
 
-- [x] **Reporting Improvements**
-    - [x] **Daily Status**: Simplify to show N meals, Total Calories/Macros, Remaining vs Target (considering deficit avg).
-    - [x] **Weekly Analysis**: Summary of last 7 days, deficits/surpluses, specific nutrient recommendations.
+- [ ] **Мультипользовательский режим**
+    - [ ] Авторизация пользователей (пароль или белый список)
+    - [ ] Изоляция данных (отдельные папки для каждого юзера)
+    - [ ] Конфигурируемое хранилище
 
-- [ ] **Multi-user Support & Auth**
-    - [ ] Implement user authorization (whitelist or password)
-    - [ ] Isolate data per user (separate `knowledge_base` / `nutrition_log` paths)
-    - [ ] Configurable storage location per user
+- [x] **Рефакторинг и структура**
+    - [x] Создать пакет `core`
+    - [x] Исследование поврежденных данных в БД (ID 88-121)
+    - [x] Создание скрипта для регенерации `totals` из `items`
+    - [x] Выполнение скрипта на сервере
+    - [x] Проверка результата командой `/week`
+    - [x] Проверка работоспособности (скрипты тестов)
 
-- [x] Create comprehensive backup
-- [x] Refactor module structure
-    - [x] Create `core` package
-    - [x] Move shared logic (`nutrition`, `storage`, etc.)
-    - [x] Standardize data paths to `HealthVault/data`
-- [x] Update import paths in Bot and Scripts
-- [x] Verify functionality
-    - [x] Develop verification script
-    - [x] Test photo/text/voice flows
-- [x] Generate final report (Russian)
+- [x] **Восстановление данных**
+    - [x] Проверить целостность nutrition_log в БД.
+    - [x] Исправить sequence (ошибка дублей ID).
+    - [x] Исправить дату для индейки (29.01).
 
-- [ ] **Stress Testing (Chaos Monkey)**
-    - [ ] Generate 100 days of nutrition data
-    - [ ] Generate "broken" export files for parsers
-    - [ ] Verify error handling
+- [ ] **Стресс-тестирование**
+    - [ ] Сгенерировать данные за 100 дней
+    - [ ] Проверить обработку "битых" файлов
+    - [ ] Проверить восстановление после сбоев
 
-- [x] **File Migration to Google Drive**
-    - [x] Move `/Users/alexlyskovsky/HealthVault/data` contents to Google Drive
-    - [x] Keep `knowledge_base.json` and project code in current location
+- [x] **Миграция файлов (Архив)**
+    - [x] Перенос данных в Google Drive
+    - [x] Настройка локального окружения
