@@ -261,3 +261,73 @@ def test_patch_item_wrong_user_404(client, api_db):
     )
     r = client.patch("/api/meal/item", json={"meal_id": row.id, "idx": 0, "weight": 200})
     assert r.status_code == 404
+
+
+def test_patch_meal_fields(client, api_db):
+    row = create_nutrition_log(
+        db=api_db,
+        user_id=895655,
+        date=date(2026, 4, 17),
+        meal_time=time(13, 0),
+        meal_name="Обед",
+        items=[{"product": "X", "weight_g": 100, "calories": 100, "protein": 1, "fats": 1, "carbs": 1, "fiber": 0}],
+        totals={"calories": 100, "protein": 1, "fats": 1, "carbs": 1, "fiber": 0},
+    )
+    r = client.patch("/api/meal", json={"meal_id": row.id, "meal_name": "Поздний обед", "meal_time": "15:30"})
+    assert r.status_code == 200
+    day = client.get("/api/day?date=2026-04-17").json()
+    assert day["meals"][0]["meal_name"] == "Поздний обед"
+    assert day["meals"][0]["meal_time"] == "15:30"
+    assert day["meals"][0]["slot"] == "snack"
+
+
+def test_delete_meal_item(client, api_db):
+    row = create_nutrition_log(
+        db=api_db,
+        user_id=895655,
+        date=date(2026, 4, 17),
+        meal_time=time(13, 0),
+        meal_name="Обед",
+        items=[
+            {"product": "A", "weight_g": 100, "calories": 100, "protein": 1, "fats": 1, "carbs": 1, "fiber": 0},
+            {"product": "B", "weight_g": 100, "calories": 50, "protein": 0, "fats": 0, "carbs": 10, "fiber": 0},
+        ],
+        totals={"calories": 150, "protein": 1, "fats": 1, "carbs": 11, "fiber": 0},
+    )
+    r = client.delete(f"/api/meal/item?meal_id={row.id}&idx=0")
+    assert r.status_code == 200
+    assert r.json()["removed"]["name"] == "A"
+    day = client.get("/api/day?date=2026-04-17").json()
+    assert len(day["meals"][0]["items"]) == 1
+
+
+def test_delete_last_item_removes_meal_api(client, api_db):
+    row = create_nutrition_log(
+        db=api_db,
+        user_id=895655,
+        date=date(2026, 4, 17),
+        meal_time=time(13, 0),
+        meal_name="Обед",
+        items=[{"product": "A", "weight_g": 100, "calories": 100, "protein": 1, "fats": 1, "carbs": 1, "fiber": 0}],
+        totals={"calories": 100, "protein": 1, "fats": 1, "carbs": 1, "fiber": 0},
+    )
+    r = client.delete(f"/api/meal/item?meal_id={row.id}&idx=0")
+    assert r.status_code == 200
+    day = client.get("/api/day?date=2026-04-17").json()
+    assert day["meals"] == []
+
+
+def test_delete_meal_whole(client, api_db):
+    row = create_nutrition_log(
+        db=api_db,
+        user_id=895655,
+        date=date(2026, 4, 17),
+        meal_time=time(13, 0),
+        meal_name="Обед",
+        items=[{"product": "A", "weight_g": 100, "calories": 100, "protein": 1, "fats": 1, "carbs": 1, "fiber": 0}],
+        totals={"calories": 100, "protein": 1, "fats": 1, "carbs": 1, "fiber": 0},
+    )
+    r = client.delete(f"/api/meal?meal_id={row.id}")
+    assert r.status_code == 204
+    day = client.get("/api/day?date=2026-04-17").json()
+    assert day["meals"] == []

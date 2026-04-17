@@ -5,8 +5,9 @@ User scope is enforced by extracting user_id from verified initData.
 """
 
 from datetime import date as date_type
+from typing import Optional
 
-from fastapi import APIRouter, Depends, HTTPException, Query
+from fastapi import APIRouter, Depends, HTTPException, Query, Response
 from pydantic import BaseModel, Field
 from sqlalchemy import update as sa_update
 
@@ -18,6 +19,9 @@ from database.crud import (
     get_nutrition_logs_by_date,
     get_nutrition_totals_by_date,
     update_nutrition_item_weight,
+    update_nutrition_meal_fields,
+    delete_nutrition_item,
+    delete_nutrition_log,
 )
 from webhook.apple_health import get_tg_user
 from webhook.nutrition_slots import SLOTS, slot_center_time, slot_from_meal, slot_label_ru
@@ -240,3 +244,96 @@ async def patch_meal_item(payload: PatchItemPayload, tg_user: dict = Depends(get
         db.expire_all()
         db.close()
     return {"item": _item_to_wire(payload.idx, item), "totals": _totals_to_wire(totals)}
+
+
+class PatchMealPayload(BaseModel):
+    meal_id: int
+    meal_name: Optional[str] = None
+    meal_time: Optional[str] = None  # "HH:MM"
+
+
+@router.patch("/api/meal")
+async def patch_meal(payload: PatchMealPayload, tg_user: dict = Depends(get_tg_user)):
+    user_id = tg_user.get("id")
+    if not user_id:
+        raise HTTPException(status_code=400, detail="No user id in initData")
+    mt = None
+    if payload.meal_time:
+        try:
+            from datetime import time as _time
+
+            h, m = payload.meal_time.split(":")
+            mt = _time(int(h), int(m))
+        except Exception:
+            raise HTTPException(status_code=400, detail="meal_time must be HH:MM")
+    db = SessionLocal()
+    try:
+        try:
+            row = update_nutrition_meal_fields(
+                db=db,
+                meal_id=payload.meal_id,
+                user_id=user_id,
+                meal_name=payload.meal_name,
+                meal_time=mt,
+            )
+        except LookupError:
+            raise HTTPException(status_code=404, detail="meal not found")
+        result = {
+            "meal_id": row.id,
+            "meal_name": row.meal_name,
+            "meal_time": row.meal_time.strftime("%H:%M") if row.meal_time else None,
+        }
+    finally:
+        db.expire_all()
+        db.close()
+    return result
+
+
+@router.delete("/api/meal/item")
+async def delete_item(
+    meal_id: int = Query(...),
+    idx: int = Query(..., ge=0),
+    tg_user: dict = Depends(get_tg_user),
+):
+    user_id = tg_user.get("id")
+    if not user_id:
+        raise HTTPException(status_code=400, detail="No user id in initData")
+    db = SessionLocal()
+    try:
+        try:
+            removed, new_totals = delete_nutrition_item(
+                db=db,
+                meal_id=meal_id,
+                user_id=user_id,
+                idx=idx,
+            )
+        except LookupError:
+            raise HTTPException(status_code=404, detail="meal not found")
+        except IndexError:
+            raise HTTPException(status_code=400, detail="item index out of range")
+    finally:
+        db.expire_all()
+        db.close()
+    return {
+        "removed": _item_to_wire(idx, removed),
+        "totals": _totals_to_wire(new_totals) if new_totals else None,
+    }
+
+
+@router.delete("/api/meal", status_code=204)
+async def delete_meal(
+    meal_id: int = Query(...),
+    tg_user: dict = Depends(get_tg_user),
+):
+    user_id = tg_user.get("id")
+    if not user_id:
+        raise HTTPException(status_code=400, detail="No user id in initData")
+    db = SessionLocal()
+    try:
+        ok = delete_nutrition_log(db=db, log_id=meal_id, user_id=user_id)
+        if not ok:
+            raise HTTPException(status_code=404, detail="meal not found")
+    finally:
+        db.expire_all()
+        db.close()
+    return Response(status_code=204)

@@ -47,7 +47,7 @@ def slot_from_meal(name: Optional[str], t: Optional[time]) -> str:
     if name:
         lowered = name.lower()
         for slot, tokens in _NAME_TOKENS.items():
-            if any(tok in lowered for tok in tokens):
+            if any(lowered == tok for tok in tokens):
                 return slot
     if t is not None:
         return slot_from_time(t)
