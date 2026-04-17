@@ -227,3 +227,37 @@ def test_post_item_bad_slot_400(client):
         },
     )
     assert r.status_code == 400
+
+
+def test_patch_item_rescales(client, api_db):
+    row = create_nutrition_log(
+        db=api_db,
+        user_id=895655,
+        date=date(2026, 4, 17),
+        meal_time=time(13, 0),
+        meal_name="Обед",
+        items=[
+            {"product": "Курица", "weight_g": 100, "calories": 165, "protein": 31, "fats": 3.6, "carbs": 0, "fiber": 0}
+        ],
+        totals={"calories": 165, "protein": 31, "fats": 3.6, "carbs": 0, "fiber": 0},
+    )
+    r = client.patch("/api/meal/item", json={"meal_id": row.id, "idx": 0, "weight": 200})
+    assert r.status_code == 200, r.text
+    body = r.json()
+    assert body["item"]["weight"] == 200
+    assert body["item"]["kcal"] == 330
+    assert body["totals"]["kcal"] == 330
+
+
+def test_patch_item_wrong_user_404(client, api_db):
+    row = create_nutrition_log(
+        db=api_db,
+        user_id=111,
+        date=date(2026, 4, 17),
+        meal_time=time(13, 0),
+        meal_name="Обед",
+        items=[{"product": "X", "weight_g": 100, "calories": 100, "protein": 0, "fats": 0, "carbs": 0, "fiber": 0}],
+        totals={"calories": 100, "protein": 0, "fats": 0, "carbs": 0, "fiber": 0},
+    )
+    r = client.patch("/api/meal/item", json={"meal_id": row.id, "idx": 0, "weight": 200})
+    assert r.status_code == 404

@@ -17,6 +17,7 @@ from database.crud import (
     find_meal_for_slot,
     get_nutrition_logs_by_date,
     get_nutrition_totals_by_date,
+    update_nutrition_item_weight,
 )
 from webhook.apple_health import get_tg_user
 from webhook.nutrition_slots import SLOTS, slot_center_time, slot_from_meal, slot_label_ru
@@ -207,3 +208,35 @@ async def add_meal_item(
         db.close()
 
     return {"meal_id": meal_id, "item": _item_to_wire(idx, new_item)}
+
+
+class PatchItemPayload(BaseModel):
+    meal_id: int
+    idx: int = Field(..., ge=0)
+    weight: float = Field(..., gt=0, le=5000)
+
+
+@router.patch("/api/meal/item")
+async def patch_meal_item(payload: PatchItemPayload, tg_user: dict = Depends(get_tg_user)):
+    user_id = tg_user.get("id")
+    if not user_id:
+        raise HTTPException(status_code=400, detail="No user id in initData")
+    db = SessionLocal()
+    try:
+        db.expire_all()
+        try:
+            item, totals = update_nutrition_item_weight(
+                db=db,
+                meal_id=payload.meal_id,
+                user_id=user_id,
+                idx=payload.idx,
+                new_weight=payload.weight,
+            )
+        except LookupError:
+            raise HTTPException(status_code=404, detail="meal not found")
+        except IndexError:
+            raise HTTPException(status_code=400, detail="item index out of range")
+    finally:
+        db.expire_all()
+        db.close()
+    return {"item": _item_to_wire(payload.idx, item), "totals": _totals_to_wire(totals)}
