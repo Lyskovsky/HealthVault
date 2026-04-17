@@ -7,6 +7,31 @@
 
 ---
 
+## 2026-04-17 — Nutrition day editor mini-app
+
+**Что:** Второй экран Telegram Mini App — редактор дневника питания. Позволяет
+просматривать и редактировать все приёмы пищи по любому дню (навигация через
+‹ / › / календарь), группированные в 4 слота (Завтрак / Обед / Перекус / Ужин),
+добавлять продукты руками (через существующий LLM-пайплайн) или из последних
+использованных, менять вес (КБЖУ пересчитывается), удалять со снэкбаром
+"Отменить". Sticky-футер с прогресс-барами Ккал/Б/Ж/У/клетчатка до дневных целей.
+
+**Зачем:** до этого нельзя было исправить ошибочно распознанный вес продукта
+и посмотреть историю за любой день — только ввод через бота.
+
+**Где:**
+- Спек: [docs/superpowers/specs/2026-04-17-nutrition-day-editor-design.md](../superpowers/specs/2026-04-17-nutrition-day-editor-design.md)
+- План: [docs/superpowers/plans/2026-04-17-nutrition-day-editor.md](../superpowers/plans/2026-04-17-nutrition-day-editor.md)
+- Фронт: `telegram-bot/webapp/{index.html, day.js, day.css}`
+- Бэк: `telegram-bot/webhook/nutrition_api.py`, `nutrition_slots.py`, `nutrition_goals.py`
+- CRUD: новые хелперы в `database/crud.py`
+
+**Паттерны UX:** cкопированы из MyFitnessPal / Yazio / Cronometer (day-switcher
+сверху, 4 слота, "+ add food" в каждом слоте, свайп-to-delete, прогресс-бары
+в футере). Фото/голос остаются в боте, мини-апп — только ручной ввод.
+
+---
+
 ## 2026
 
 - **[2026-04-17]** Обновлён Apple Health export до 16.04.2026: распакован `/Users/alexlyskovsky/Downloads/экспорт 2.zip` → 727 MB XML, запущен `scripts/import/apple_health.py --export_xml '/tmp/ah_export2/apple_health_export/экспорт.xml'`. Результат: АД 128/86 (16.04), пульс покоя 49 уд/мин, шаги ср7д 7 697, ходьба 4.42 км/ч. Данные в `data/apple_health_{blood_pressure,heart_rate,steps_daily,gait}.json`. Примечание: после каждого `/sync` нужно перезапускать импорт вручную — `sync_all_data.sh` находит старый `apple_health_export4/` (март) и перетирает свежие данные. — *Claude Code*
