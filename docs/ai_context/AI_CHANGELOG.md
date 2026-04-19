@@ -34,6 +34,12 @@
 
 ## 2026
 
+- **[2026-04-18]** Импорт 41 анализа из fdoctor.ru в knowledge_base.json Александра: 35 PDF (кровь, гормоны, витамины, COVID), 1 PDF УЗИ, 5 MD-протоколов. Создан `scripts/import/fdoctor_import.py`, `fdoctor_ir.py`, `update_kb.py`. Исправлены 4 мёртвые ссылки в KB. KB вырос с 48 до 89 записей. — *Claude Code*
+
+- **[2026-04-18]** Автосинхронизация `alcohol_daily.json`: создан `scripts/import/sync_alcohol.py` (читает nutrition_log_remote.json → группирует по дням → пишет alcohol_daily.json). Добавлен в `sync_all_data.sh` шагом 1.9/4. — *Claude Code*
+
+- **[2026-04-18]** Парсинг лабораторных значений из PDF: создан `scripts/import/parse_lab_pdfs.py` (PyMuPDF → GPT-4o-mini → values в KB). Распарсено 31 PDF, 70 из 89 записей KB теперь имеют поле `values` с числами, единицами и референсами (78%). Оставшиеся 19 — генетика, ПЦР, описательные протоколы УЗИ. — *Claude Code*
+
 - **[2026-04-17]** Обновлён Apple Health export до 16.04.2026: распакован `/Users/alexlyskovsky/Downloads/экспорт 2.zip` → 727 MB XML, запущен `scripts/import/apple_health.py --export_xml '/tmp/ah_export2/apple_health_export/экспорт.xml'`. Результат: АД 128/86 (16.04), пульс покоя 49 уд/мин, шаги ср7д 7 697, ходьба 4.42 км/ч. Данные в `data/apple_health_{blood_pressure,heart_rate,steps_daily,gait}.json`. Примечание: после каждого `/sync` нужно перезапускать импорт вручную — `sync_all_data.sh` находит старый `apple_health_export4/` (март) и перетирает свежие данные. — *Claude Code*
 
 - **[2026-04-17]** Создан `docs/LONGEVITY_BENCHMARKS.md` — сравнительный анализ двух лонджевити-бенчмарков (Blueprint by Bryan Johnson и Singularity Club) с HealthVault: что у них есть, чего нет у нас (пробелы: омега-3 индекс, LDL particle size, MMA, тяжёлые металлы Pb/Hg, ANA, VO₂max, CGM, WGS, фармакогеномика), что есть у нас и нет у них (ежедневная гранулярность). Приоритизированный список «добавить в HealthVault» (🔴/🟡/🟢). Протокол чекапов 2x/год + 1x/год + каждые 3–4 мес. — *Claude Code*
