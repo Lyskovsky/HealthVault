@@ -7,6 +7,73 @@
 
 ---
 
+## 2026-04-21 — Полное переписывание AI-context доков
+
+**Что:** ревью обнаружило что 3 из 7 файлов `docs/ai_context/` содержат неверные пути модулей и старые поля БД. Переписаны полностью с применением best practices от Anthropic и опытных AI-coding команд.
+
+**Изменения:**
+- ✨ **Новый `README.md`** — индекс с навигацией «когда читать что», принципы поддержки доков (single source of truth, anti-patterns в явном виде, file:line ссылки и т.п.)
+- 🔄 **`01_architecture.md`** — полностью переписан. Реальные пути (`core/llm/router.py` а не `core/llm_router.py`), описание мини-аппа, FastAPI слоя, supplements_api, flow данных от ввода до БД, anti-patterns.
+- 🔄 **`03_database_schema.md`** — полностью переписан. Все 8 таблиц управляемых ORM + список orphan-таблиц. Реальные имена полей (`fats` не `fat`, `body_fat` не `fat_percent`, `supplement_name` не `name`, FK на `users.telegram_id` не `users.id`). Документированы 3 несовместимые схемы внутри `nutrition_log.items`. Готовые SQL-сниппеты.
+- 🔄 **`04_workflows.md`** — полностью переписан. Реальные пути скриптов (`scripts/import/X.py` а не `scripts/import_X.py`). Новые SOP: деплой в продакшен, мини-апп фичи, удаление мёртвой фичи (как делали с `/my_products`).
+- 🔄 **`05_food_logging_context.md`** — обновлён. Добавлены новые способы ввода (фото упаковки с авто-весом, мини-апп редактирование, daily-log добавок, голосовое). Обновлена таблица КБЖУ.
+- 🛠 **`02_data_sources.md`** — точечные фиксы: `fat`→`fats`, `weight_kg`→`weight`, добавлена шапка с каноническими именами полей.
+- ❌ **Удалён `FULL_CONTEXT.md`** (24KB) — полностью overlap'ил с новыми 01+02+03, содержал неверные данные (2 пользователя вместо 3, 125 тестов вместо 307, неверный путь проекта, ссылки на несуществующие скрипты).
+
+**Best practices применены:**
+- `**Last verified:** YYYY-MM-DD` в шапке каждого файла → видно стейл с первого взгляда
+- Anti-patterns в явном виде с ❌/✅ маркерами
+- Single source of truth — каждый факт в одном файле
+- File:line ссылки где применимо (например `database/crud.py:172`)
+- Канонические команды для копи-паста (psql, pytest, deploy)
+- «Почему» в дополнение к «что» (e.g. почему JSONB вместо нормальных таблиц)
+
+**Также:**
+- `CLAUDE.md` — обновлена строчка `docs/ai_context/` чтобы вести через `README.md`.
+- 307 тестов проходят, никакого кода не тронуто (только доки).
+
+**Файлы:** `docs/ai_context/{README,01_architecture,02_data_sources,03_database_schema,04_workflows,05_food_logging_context,AI_CHANGELOG}.md`, `CLAUDE.md`. Удалён `docs/ai_context/FULL_CONTEXT.md`. — Claude Sonnet 4.6
+
+---
+
+## 2026-04-21 — Архитектурный аудит: top-10 проблем (3 параллельных агента)
+
+**Что:** мульти-агентное ревью кода после серии быстрых фич (фибро-пайплайн, мини-апп редизайн, supplements daily log). 3 параллельных агента с разными ролями (Backend/Data, Frontend/UX, Pragmatic engineer) + личная SQL-проба 100 дней реальных данных.
+
+**Результат:** топ-10 проблем по серьёзности:
+- **Tier S (silent data rot):** 3 несовместимые item-схемы, 103 items с null weight, бесполезный unique-constraint (30 дублей), totals.fiber drift между read/write путями.
+- **Tier A (UX-баги):** race в supplements toggle, autosave без retry, autosave-pill за tab-bar на iPhone Pro.
+- **Tier B (tech debt):** 6 proxy-шимов + dead CSS + archive/2026-02-01/, AI-context доки 5+ недель устарели, photo.py 1217 LOC без тестов.
+
+**Файл:** `docs/2026-04-21-architectural-review.md` (207 строк).
+
+**Делать в три захода:** quick (~2ч) → important (~1д) → reliability (~1д). — Claude Sonnet 4.6
+
+---
+
+## 2026-04-21 — Полная чистка `/my_products` фичи
+
+**Что:** после подтверждения 0 рядов во всех таблицах user_products / user_product_variants полностью удалена фича.
+
+**Удалено (~370 LOC):**
+- Bot command handlers: `cmd_my_products`, `cmd_add_product`, `cmd_add_variant`
+- CRUD: `get_user_products`, `add_user_product`, `add_product_variant`, `update_product_average_from_variants`, `match_user_product`
+- ORM models: `UserProduct`, `UserProductVariant`
+- Database imports / `__all__` entries для всего вышеперечисленного
+- Early-exit product matching block в `handlers/text.py`
+
+**Database migration (вручную на проде):**
+```sql
+DROP TABLE IF EXISTS user_product_variants CASCADE;
+DROP TABLE IF EXISTS user_products CASCADE;
+```
+
+**Telegram bot menu теперь:** /start /day /week /vitamins /help (5 команд вместо 6).
+
+**Verification:** 307 тестов прошли, бот стартует чисто, все 4 API endpoint'а отвечают ожидаемо. — Claude Sonnet 4.6
+
+---
+
 ## 2026-04-19 — Полная загрузка EMIAS: 21 PDF + 3 исследования + документация метода
 
 **Что:** Загружены все 21 PDF из ЕМИАС (18 анализов + 3 исследования). Добавлены KB-записи для ОАК 12.07.2024 (24 параметра), ЭКГ 23.01.2025, рентгена рёбер 06.02.2025. Создана документация по методу для повторного использования (Ника и другие члены семьи). Написан отчёт по медицинским находкам.
