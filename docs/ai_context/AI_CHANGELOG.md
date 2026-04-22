@@ -7,6 +7,26 @@
 
 ---
 
+## 2026-04-22 — Аудит мультиюзер-готовности + hardening user_id isolation
+
+**Что:** полный аудит хардкода `user_id=895655` в продакшн-коде перед разработкой мультиюзера (запланировано на 25–26 апр). Найдено и исправлено:
+
+1. **`helpers/db_save.py`** — убраны дефолты `user_id=895655` из 4 функций (`save_meal_to_db`, `save_weight_to_db`, `save_supplements_to_db`, `save_body_measurement_to_db`). Теперь `user_id=None` + `raise ValueError` если не передан — молчаливая утечка данных к первому пользователю теперь невозможна.
+
+2. **`database/crud.py`** — `ensure_user_exists()` теперь создаёт `UserSettings` с дефолтами при первой регистрации. До этого новый пользователь существовал без записи в `user_settings`, код везде делал `if s else`.
+
+3. **`telegram-bot/webhook/apple_health.py`** — Apple Health webhook теперь роутит по `users.health_token` (поле уже было в модели). Глобальный `APPLE_HEALTH_TOKEN` → `_PRIMARY_USER_ID` сохранён для обратной совместимости. Каждый пользователь теперь может иметь свой Bearer token.
+
+4. **`services/nutrition_service.py`** — исправлен docstring `default: 895655`.
+
+**Результат аудита (хорошие новости):** все обработчики (`photo.py`, `text.py`, `commands.py`) уже правильно передают `user_id=telegram_user_id`. `caloric_budget.py` обрабатывает `None` settings. `garmin_data.py` поддерживает мультиюзер через `user.garmin_email`. Основной блокер для новых пользователей — `config/users.py` whitelist (требует design decision от владельца).
+
+**Детальный чеклист** перенесён в `todo.md` (пункт «🚀 Полноценный мультиюзер NutriLogBot»).
+
+**330 тестов проходят.** Коммит `d188abf`. — Claude Sonnet 4.6
+
+---
+
 ## 2026-04-21 — Полное переписывание AI-context доков
 
 **Что:** ревью обнаружило что 3 из 7 файлов `docs/ai_context/` содержат неверные пути модулей и старые поля БД. Переписаны полностью с применением best practices от Anthropic и опытных AI-coding команд.
