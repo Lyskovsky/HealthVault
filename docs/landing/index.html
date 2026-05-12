@@ -222,7 +222,11 @@ section .lead {
   background: var(--card); border: 1px solid var(--border); border-radius: 14px;
   padding: 32px; overflow-x: auto;
 }
-.mermaid { color: var(--text); }
+.mermaid { color: var(--text); font-size: 15px; }
+.mermaid svg { min-height: 720px; height: auto !important; max-width: none !important; width: auto !important; display: block; margin: 0 auto; }
+.mermaid .nodeLabel { font-size: 15px !important; }
+.mermaid .cluster-label .nodeLabel { font-size: 17px !important; font-weight: 700 !important; letter-spacing: 1px; }
+.mermaid .edgeLabel { font-size: 13px !important; }
 
 /* ─────────── Screenshots gallery ─────────── */
 .gallery {
@@ -878,6 +882,14 @@ mermaid.initialize({
     mainBkg: '#141a28',
     secondBkg: '#0f1420',
     fontFamily: 'SF Pro Display, Inter, sans-serif',
+    fontSize: '16px',
+  },
+  flowchart: {
+    useMaxWidth: false,
+    htmlLabels: true,
+    nodeSpacing: 50,
+    rankSpacing: 90,
+    padding: 20,
   }
 });
 </script>
