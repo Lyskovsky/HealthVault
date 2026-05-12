@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <title>Botkin — Персональный AI-помощник для здоровья</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Открытая платформа для трекинга здоровья: Telegram-бот, дашборд, интеграции с Apple Health/Garmin, AI-помощник через Claude и Gemini.">
+<meta name="description" content="Открытая платформа для трекинга здоровья: Telegram-бот (iOS / Android), интеграции с Apple Health, Garmin, тонометром и весами; AI-помощник через Claude или Gemini.">
 <meta property="og:title" content="Botkin — Персональный AI-помощник для здоровья">
 <meta property="og:description" content="Открытый проект Александра Лысковского для трекинга и анализа здоровья с AI.">
 <meta property="og:image" content="/landing/assets/og-cover.png">
@@ -502,7 +502,7 @@ footer .bottom {
     <div class="step">
       <span class="num">02</span>
       <h3>Логируешь данные</h3>
-      <p>Фото еды, голосовые «принял креатин», текст «АД 128/72». Apple Health / Garmin синхронизируются автоматически каждую ночь.</p>
+      <p>Фото еды, голосовые «принял креатин», текст «АД 128/72». Garmin и весы синхронизируются автоматически каждую ночь — на iPhone дополнительно подтягиваются данные из Apple Health.</p>
     </div>
     <div class="step">
       <span class="num">03</span>
@@ -636,7 +636,7 @@ flowchart LR
     <div class="persona">
       <div class="who">🏃 Здоровьем интересующийся</div>
       <h3>«Я слежу за здоровьем системно»</h3>
-      <p>Носишь Apple Watch / Garmin, сдаёшь анализы регулярно, есть таблица KБЖУ в Excel, хочешь увидеть всё в одном дашборде с трендами.</p>
+      <p>Носишь Apple Watch / Garmin / фитнес-браслет, сдаёшь анализы регулярно, есть таблица KБЖУ в Excel, хочешь увидеть всё в одном дашборде с трендами.</p>
       <div class="what">→ Бот + Apple Health/Garmin + Dashboard</div>
     </div>
     <div class="persona">
@@ -807,7 +807,7 @@ flowchart LR
 
   <details class="faq-item">
     <summary>У меня Android, что делать?</summary>
-    <p>Telegram-бот работает у любого пользователя. Без iPhone не будет автоматического синка Apple Health, но всё что ты вводишь руками — работает. Если у тебя Garmin — есть прямой коннектор.</p>
+    <p>Бот работает одинаково на iOS и Android — Telegram одинаков. На Android не будет автосинка Apple Health (он есть только в iOS), зато всё остальное — Garmin, весы Mi / Zepp, тонометр Omron, ручной ввод (фото / голос / текст) — работает на любой платформе. Интеграция с Google Health Connect в планах.</p>
   </details>
 
   <details class="faq-item">
